@@ -1,0 +1,134 @@
+{
+    "about": {
+        "intro": "Saya seorang *Fullstack Web Developer* yang berfokus membangun **aplikasi web yang bersih, responsif, dan mudah dikelola**.",
+        "description": "Mahasiswa Informatika semester lima di UPN \"Veteran\" Jawa Timur dengan pengalaman berbasis proyek lebih dari 1,5 tahun dalam fullstack web development. Terampil dalam PHP, Laravel, HTML5, CSS3, JavaScript, dan MySQL. Saat ini memperluas keterampilan frontend dengan React dan Vite.",
+        "full": "Halo, saya **Brian Dicky Vanka Andaraneva** — seorang Fullstack Web Developer yang berbasis di Sidoarjo, Jawa Timur.\n\nMahasiswa Informatika semester lima di **UPN \"Veteran\" Jawa Timur** dengan pengalaman langsung berbasis proyek lebih dari 1,5 tahun dalam fullstack web development. Terampil dalam backend development dengan **PHP dan Laravel**, serta frontend development dengan **HTML5, CSS3, dan JavaScript**, dengan pengalaman praktis dalam arsitektur MVC berbasis MySQL, operasi CRUD, dan integrasi frontend-backend.\n\nSaat ini bekerja sebagai Fullstack Developer di Javatekno Mitra Solusi, membangun aplikasi web Pusat Kos menggunakan Laravel, dan memperkuat keterampilan ini melalui proyek Coding Camp serta proyek independen dalam manajemen inventaris dan pengembangan aplikasi desktop, sembari terus memperluas keterampilan frontend development dengan **React** dan **Vite**."
+    },
+    "manifesto": [
+        "ARSITEKTUR KODE BERSIH",
+        "UTAMAKAN DESAIN RESPONSIF",
+        "PENGEMBANGAN TERSTRUKTUR",
+        "PEMBELAJARAN BERKELANJUTAN",
+        "BERORIENTASI PERFORMA",
+        "SOLUSI TERUKUR"
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "title": "PUSATKOS",
+            "category": "Web Application",
+            "year": "Sekarang",
+            "description": "Currently in Development / Ongoing. Membangun alur web owner dan customer untuk platform kos-rental menggunakan Laravel 12, mengimplementasikan controller MVC, model Eloquent, rute, dan Blade views berdasarkan template frontend. Halaman dan form saat ini berjalan dengan dummy data dari setiap controller, dengan migrasi database, autentikasi, dan live CRUD sebagai tahap selanjutnya.",
+            "image": "/projects/pusatkos-new.jpeg",
+            "demo": "",
+            "repo": "https://github.com/briandicky09/PUSATKOS",
+            "stack": [
+                "Laravel 12",
+                "PHP",
+                "Blade",
+                "Bootstrap"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "PULSE",
+            "category": "Web Application",
+            "year": "2025",
+            "description": "Membangun aplikasi manajemen inventaris web pribadi untuk operasional restoran/F&B, mengimplementasikan manajemen stok, pemasok, penggunaan, dan limbah berbasis CRUD dengan fitur pencarian, filter, pengurutan, dan ekspor CSV. Mengimplementasikan dashboard KPI dengan visualisasi pergerakan stok, notifikasi otomatis, dan dialog konfirmasi, menggunakan localStorage/sessionStorage untuk persistensi data di browser.",
+            "image": "/projects/pulse-new.png",
+            "demo": "https://pulse-manager-new.vercel.app/",
+            "repo": "https://github.com/briandicky09/project-pulse-manager",
+            "stack": [
+                "HTML5",
+                "Tailwind CSS",
+                "JavaScript",
+                "localStorage",
+                "sessionStorage"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Kopi Nusantara",
+            "category": "E-Commerce",
+            "year": "2025",
+            "description": "Mengembangkan situs web responsif multi-halaman untuk merek kopi Indonesia, termasuk halaman Home, Produk, Galeri, Tentang, Pemesanan, dan Kontak. Membangun navbar responsif dengan penyorotan link aktif menggunakan vanilla JavaScript, disesuaikan dengan Bootstrap 5 dan CSS kustom.",
+            "image": "/projects/kopi-nusantara-new.png",
+            "demo": "https://pemweb-kopi-nusantara.vercel.app/",
+            "repo": "https://github.com/briandicky09/pemweb-kopi-nusantara",
+            "stack": [
+                "HTML5",
+                "CSS3",
+                "Bootstrap",
+                "JavaScript"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Pajak Kendaraan",
+            "category": "Desktop App",
+            "year": "2026",
+            "description": "Membangun aplikasi desktop dwi-implementasi yang dibuat dengan Java (Swing) dan C++ (Qt) untuk menghitung pajak kendaraan bermotor (PKB & SWDKLLJ). Fitur meliputi perhitungan pajak otomatis, rincian hasil, riwayat transaksi, fungsi pencarian, ubah, dan hapus, dengan persistensi file pada versi Qt.",
+            "image": "/projects/vehicle-tax-new.jpeg",
+            "repo": "https://github.com/briandicky09/vehicle-tax-calculator",
+            "stack": [
+                "Java",
+                "Swing",
+                "C++",
+                "Qt Creator",
+                "Qt Widgets"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "id": 1,
+            "type": "training",
+            "role": "AI Full-Stack Developer",
+            "company": "Asah by Dicoding | Supported by GoTo",
+            "period": "Agu 2026 - Sekarang",
+            "description": [
+                "Berpartisipasi dalam program pembelajaran berbasis proyek berorientasi industri yang berfokus pada pengembangan web full-stack dan integrasi AI.",
+                "Mengembangkan keterampilan meliputi frontend, backend, React, JavaScript, AI, dan pengembangan aplikasi web melalui pembelajaran terstruktur dan proyek langsung."
+            ],
+            "tags": [
+                "Fullstack Web Development",
+                "React",
+                "JavaScript",
+                "AI Integration"
+            ]
+        },
+        {
+            "id": 2,
+            "type": "professional",
+            "role": "Fullstack Developer",
+            "company": "Javatekno Mitra Solusi",
+            "period": "Agu 2026 - Sekarang",
+            "description": [
+                "Mengembangkan aplikasi web berbasis Laravel dan PHP untuk Pusat Kos, bekerja melintasi komponen frontend dan backend.",
+                "Menyusun arsitektur layer MVC (controller, model Eloquent, Blade views) di environment XAMPP lokal, sebagai persiapan untuk integrasi database MySQL dan fungsionalitas live CRUD."
+            ],
+            "tags": [
+                "Laravel",
+                "PHP",
+                "MVC",
+                "Frontend-Backend Integration"
+            ]
+        },
+        {
+            "id": 3,
+            "type": "training",
+            "role": "Fullstack Web Developer",
+            "company": "Dicoding | Coding Camp powered by DBS Foundation",
+            "period": "Mar 2026 - Jun 2026",
+            "description": [
+                "Mengembangkan aplikasi web fullstack yang memiliki 3 modul berbasis CRUD dengan manajemen siklus data lengkap (create, read, update, delete).",
+                "Mengimplementasikan integrasi frontend-backend dengan konektivitas database di lingkungan rekayasa perangkat lunak berbasis proyek."
+            ],
+            "tags": [
+                "Frontend-Backend Integration",
+                "CRUD Operations",
+                "Database"
+            ]
+        }
+    ]
+}

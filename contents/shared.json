@@ -1,0 +1,136 @@
+{
+    "contact": {
+        "location": "Sidoarjo, East Java",
+        "email": "briandicky09@gmail.com",
+        "phone": "Not added yet."
+    },
+    "social": [
+        {
+            "label": "GitHub",
+            "href": "https://github.com/briandicky09"
+        },
+        {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/briandicky/"
+        },
+        {
+            "label": "Email",
+            "href": "https://mail.google.com/mail/?view=cm&fs=1&to=briandicky09@gmail.com"
+        }
+    ],
+    "stack": {
+        "frontend": [
+            {
+                "name": "HTML5",
+                "icon": "/stack/html5.svg",
+                "featured": true
+            },
+            {
+                "name": "CSS3",
+                "icon": "/stack/css3.svg",
+                "featured": true
+            },
+            {
+                "name": "JavaScript (ES6+)",
+                "icon": "/stack/javascript.svg",
+                "featured": true
+            },
+            {
+                "name": "Bootstrap",
+                "icon": "/stack/bootstrap.svg"
+            },
+            {
+                "name": "Tailwind CSS",
+                "icon": "/stack/tailwindcss.svg"
+            },
+            {
+                "name": "React",
+                "icon": "/stack/react.svg"
+            },
+            {
+                "name": "Responsive Design",
+                "icon": "/stack/css3.svg"
+            }
+        ],
+        "backend": [
+            {
+                "name": "PHP",
+                "icon": "/stack/php.svg",
+                "featured": true
+            },
+            {
+                "name": "Laravel",
+                "icon": "/stack/laravel.svg",
+                "featured": true
+            },
+            {
+                "name": "CRUD Operations",
+                "icon": "/stack/mysql.svg"
+            },
+            {
+                "name": "MVC",
+                "icon": "/stack/php.svg"
+            },
+            {
+                "name": "Frontend–Backend Integration",
+                "icon": "/stack/javascript.svg"
+            }
+        ],
+        "database": [
+            {
+                "name": "MySQL",
+                "icon": "/stack/mysql.svg",
+                "featured": true
+            },
+            {
+                "name": "Basic Database Design",
+                "icon": "/stack/mysql.svg"
+            }
+        ],
+        "clientSideData": [
+            {
+                "name": "localStorage",
+                "icon": "/stack/javascript.svg",
+                "featured": true
+            },
+            {
+                "name": "sessionStorage",
+                "icon": "/stack/javascript.svg"
+            }
+        ],
+        "tools": [
+            {
+                "name": "Git",
+                "icon": "/stack/git.svg"
+            },
+            {
+                "name": "GitHub",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+            },
+            {
+                "name": "VS Code",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+            },
+            {
+                "name": "XAMPP",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+            },
+            {
+                "name": "Vite",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg"
+            },
+            {
+                "name": "Figma",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+            },
+            {
+                "name": "Vercel",
+                "icon": "/stack/vercel.svg"
+            },
+            {
+                "name": "Draw.io",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+            }
+        ]
+    }
+}

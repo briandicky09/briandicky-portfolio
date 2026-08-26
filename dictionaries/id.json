@@ -1,0 +1,66 @@
+{
+    "meta": {
+        "title": "Brian | Fullstack Web Developer",
+        "description": "Portofolio Brian Dicky Vanka Andaraneva - Fullstack Web Developer"
+    },
+    "nav": {
+        "home": "Beranda",
+        "about": "Tentang",
+        "stack": "Stack",
+        "projects": "Proyek",
+        "roadmap": "Perjalanan",
+        "contact": "Kontak"
+    },
+    "scrollDown": "Scroll ke bawah",
+    "contactMe": "Hubungi Saya",
+    "exploreProjects": "Lihat Proyek",
+    "title": {
+        "about": "About Me",
+        "stack": "Tech Stack",
+        "projects": "Featured Projects",
+        "roadmap": "Experience",
+        "contact": "Get In Touch"
+    },
+    "readFullVersion": "Baca versi lengkap",
+    "viewProject": "Lihat Proyek",
+    "visitWebsite": "Kunjungi Web",
+    "sourceCode": "Kode Sumber",
+    "projectYear": "Tahun",
+    "techStack": "Teknologi",
+    "frontendStack": "Teknologi Frontend",
+    "backendStack": "Teknologi Backend",
+    "databaseStack": "Database",
+    "toolsStack": "Tools & Infrastruktur",
+    "clientSideDataStack": "Penyimpanan Data Sisi Klien",
+    "projectsIntro": "Kumpulan *eksperimen*, *produk*, dan *karya digital* yang ditempa di dalam **kehampaan**.",
+    "projectsScrollText": "Scroll untuk eksplorasi",
+    "projectsEndText": "Akhir",
+    "roadmapDescription": "Sebuah roadmap tempat saya berbagi pengalaman yang diperoleh sepanjang perjalanan dan teknologi yang telah dipelajari.",
+    "professionalExperience": "Pengalaman Profesional",
+    "trainingExperience": "Pelatihan & Bootcamp",
+    "contactIntroText": "Tertarik bekerja sama atau hanya ingin berdiskusi? Jangan ragu untuk menghubungi saya melalui kontak di bawah ini.",
+    "form": {
+        "name": "Nama Lengkap",
+        "namePlaceholder": "Nama Anda",
+        "email": "Alamat Email",
+        "emailPlaceholder": "email@anda.com",
+        "subject": "Subjek",
+        "subjectPlaceholder": "Diskusi Proyek",
+        "message": "Pesan",
+        "messagePlaceholder": "Ceritakan tentang proyek Anda...",
+        "submit": "Kirim Pesan"
+    },
+    "sendEmail": "Kirim Email",
+    "directLine": "Telepon",
+    "allRightsReserved": "HAK CIPTA DILINDUNGI.",
+    "contactModalDescription": "Kirimkan pesan dan saya akan membalas secepat mungkin.",
+    "projectDetails": "Detail tentang",
+    "aboutProject": "Tentang Proyek",
+    "technologies": "Teknologi",
+    "liveDemo": "Demo Langsung",
+    "notFound": {
+        "title": "Halaman Tidak Ditemukan",
+        "description": "Halaman yang Anda cari mungkin telah dihapus, diubah namanya, atau untuk sementara tidak tersedia.",
+        "goHome": "Kembali ke Beranda"
+    }
+}
