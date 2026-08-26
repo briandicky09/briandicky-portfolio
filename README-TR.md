@@ -9,12 +9,11 @@
   <br />
 
 <div align="center">
-  <img src="public/logo.png" width="120" height="120" />
   <br />
   <br />
 
   <p>
-     Awwwards kalitesindeki tasarımlardan ilham alan kişisel bir portföy web sitesi.
+     Premium tasarım ve etkileşimleri düzgün olan kişisel bir portföy web sitesi.
   </p>
 
 ![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
@@ -36,12 +35,12 @@
 
 ## 📋 Hakkında
 
-**Kintarowwards**, üst düzey Awwwards ödüllü web sitelerinden ilham alan, açık kaynaklı ve son derece etkileşimli bir kişisel portföy şablonudur. Premium bir kullanıcı deneyimi sunmak için tasarlanmış pürüzsüz kaydırma, fizik tabanlı mikro etkileşimler, dinamik tema değiştirme ve tam çok dilli bir sisteme sahiptir. Her ayrıntı, yüksek performans ve temiz kod standartlarını korurken kalıcı bir izlenim bırakmak için işlenmiştir.
+Bu, projeleri, deneyimi ve teknik becerilerini sergileyen **Brian Dicky** için kişisel bir portföy web sitesidir. Modern web teknolojileriyle oluşturulmuş, düzgün kaydırma, fizik tabanlı mikro etkileşimler ve duyarlı tasarım özellikleriyle donatılmıştır.
 
 ## <a id="features"></a> ✨ Özellikler
 
 - **Gelişmiş Animasyonlar**: Framer Motion ve Motion kütüphaneleri ile akıcı geçişler ve mikro etkileşimler.
-- **Fizik Tabanlı Bileşenler**: Fare hareketlerine tepki veren "Hanging Profile" gibi dinamik ve fizik kurallarına uygun kullanıcı arayüzü öğeleri.
+- **Fizik Tabanlı Bileşenler**: Kullanıcı etkileşimlerine tepki veren dinamik ve fizik kurallarına uygun kullanıcı arayüzü öğeleri.
 - **Pürüzsüz Kaydırma**: Lenis entegrasyonu ile modern ve yüksek kaliteli bir kaydırma deneyimi.
 - **Dinamik Tema Desteği**: next-themes ile optimize edilmiş Karanlık ve Aydınlık mod geçişleri.
 - **Çoklu Dil Desteği**: Küresel kullanıcılar için genişletilebilir dil seçenekleri.
@@ -64,8 +63,8 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyi
 1. **Depoyu kopyalayın:**
 
    ```bash
-   git clone https://github.com/xkintaro/kintarowwwards.git
-   cd kintarowwwards
+   git clone https://github.com/briandicky09/briandicky-portfolio.git
+   cd briandicky-portfolio
    ```
 
 2. **Bağımlılıkları yükleyin:**
@@ -89,5 +88,5 @@ Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICE
 #
 
 <p align="center">
-  <sub>❤️ Developed by "Mustafa TAŞAL" (kintaro)</sub>
+  <sub>❤️ Geliştirildi Brian Dicky tarafından</sub>
 </p>

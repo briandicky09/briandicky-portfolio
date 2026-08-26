@@ -9,12 +9,11 @@
   <br />
 
 <div align="center">
-  <img src="public/logo.png" width="120" height="120" />
   <br />
   <br />
 
   <p>
-     A personal portfolio website inspired by the design quality of Awwwards.
+     A personal portfolio website with premium design and smooth interactions.
   </p>
 
 ![Next.js](https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=next.js)
@@ -36,12 +35,12 @@
 
 ## 📋 About
 
-**Kintarowwards** is an open-source, highly interactive personal portfolio template inspired by top-tier Awwwards-winning websites. It features smooth scrolling, physics-based micro-interactions, dynamic theme switching, and a fully multilingual system designed to deliver a premium user experience. Every detail is crafted to leave a lasting impression while maintaining high performance and clean code standards.
+This is a personal portfolio website for **Brian Dicky** showcasing projects, experience, and technical skills. Built with modern web technologies, featuring smooth scrolling, physics-based micro-interactions, and responsive design.
 
 ## <a id="features"></a> ✨ Features
 
 - **Advanced Animations**: Fluid transitions and micro-interactions with Framer Motion and Motion libraries.
-- **Physics-Based Components**: Dynamic and physics-compliant UI elements like "Hanging Profile" that respond to mouse movements.
+- **Physics-Based Components**: Dynamic and physics-compliant UI elements that respond to user interactions.
 - **Smooth Scroll**: A modern and high-quality scrolling experience with Lenis integration.
 - **Dynamic Theme Support**: Optimized Dark and Light mode transitions with next-themes.
 - **Multi-language Support**: Extensible language options for global users.
@@ -64,8 +63,8 @@ Follow the steps below to run the project in your local environment:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/xkintaro/kintarowwwards.git
-   cd kintarowwwards
+   git clone https://github.com/briandicky09/briandicky-portfolio.git
+   cd briandicky-portfolio
    ```
 
 2. **Install dependencies:**
@@ -89,5 +88,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 #
 
 <p align="center">
-  <sub>❤️ Developed by "Mustafa TAŞAL" (kintaro)</sub>
+  <sub>❤️ Developed by Brian Dicky</sub>
 </p>
