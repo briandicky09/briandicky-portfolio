@@ -5,7 +5,8 @@ import Image from "next/image";
 import { useScroll, useTransform, useMotionTemplate, motion } from "framer-motion";
 import { useLanguage } from "@/providers/language-provider";
 import { ArrowRight, Mouse } from "lucide-react";
-import { InteractiveParticles } from "@/components/effects/interactive-particles";
+import MoltenMetal from "@/components/ui/molten-metal";
+import ProfileCard from "@/components/ui/profile-card";
 
 
 export default function Hero() {
@@ -43,42 +44,59 @@ export default function Hero() {
             className="sticky top-0 h-screen w-full flex flex-col justify-between bg-background px-container md:px-16 pt-28 pb-12 sm:pt-32 sm:pb-16 2xl:pb-24 overflow-hidden"
             id="home"
         >
-            <InteractiveParticles />
+            <MoltenMetal
+                color1="#5227FF"
+                color2="#FF9FFC"
+                color3="#FFFFFF"
+                speed={0.35}
+                scale={4}
+                detail={3}
+                glow={1.6}
+                coreSize={0.1}
+                swirl={1}
+                fold={-0.2}
+                blackPoint={0.05}
+                brightness={1.3}
+                colorMode="molten"
+                grain={true}
+                grainIntensity={0.05}
+                mouseInteraction={true}
+                mouseStrength={0.3}
+                opacity={1.0}
+            />
 
             <motion.div
                 style={{ opacity }}
-                className="absolute top-0 right-4 sm:right-12 md:right-16 lg:right-24 xl:right-36 2xl:right-48 bottom-0 h-full w-[17rem] sm:w-[19rem] md:w-[22rem] lg:w-[25rem] xl:w-[28rem] 2xl:w-[30rem] flex justify-center items-center overflow-hidden z-0 pointer-events-none select-none opacity-40 dark:opacity-30"
+                className="absolute top-0 right-0 sm:right-12 md:right-16 lg:right-24 xl:right-36 2xl:right-48 bottom-0 h-full w-[17.5rem] sm:w-[21rem] md:w-[22rem] lg:w-[25rem] xl:w-[28rem] 2xl:w-[30rem] flex justify-center items-center overflow-visible z-10 pointer-events-auto select-none -translate-y-28 sm:-translate-y-8 md:translate-y-4 lg:translate-y-6 xl:translate-y-8"
             >
-                <motion.div
-                    animate={{ y: ["-3%", "3%"] }}
-                    transition={{
-                        y: {
-                            ease: "easeInOut",
-                            duration: 6,
-                            repeat: Infinity,
-                            repeatType: "reverse"
+                <ProfileCard
+                    name="Brian Dicky"
+                    title="Fullstack Developer"
+                    handle="briandicky09"
+                    status="Online"
+                    contactText="Contact"
+                    avatarUrl="/profile-new.png"
+                    showUserInfo={false}
+                    enableTilt={true}
+                    enableMobileTilt={false}
+                    behindGlowEnabled={true}
+                    innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
+                    onContactClick={() => {
+                        const contactSection = document.getElementById("contact");
+                        if (contactSection) {
+                            contactSection.scrollIntoView({ behavior: "smooth" });
                         }
                     }}
-                    className="w-full aspect-3/4 relative overflow-hidden rounded-4xl [mask-image:radial-gradient(ellipse_closest-side_at_center,black_50%,transparent_100%)] [-webkit-mask-image:radial-gradient(ellipse_closest-side_at_center,black_50%,transparent_100%)]"
-                >
-                    <Image
-                        src="/profile.webp"
-                        alt="Brian Dicky Vanka Andaraneva"
-                        fill
-                        sizes="(max-width: 1280px) 40vw, 25vw"
-                        priority
-                        className="object-cover object-center pointer-events-none select-none"
-                    />
-                </motion.div>
+                />
             </motion.div>
 
             <motion.div
                 style={{ opacity, scale, y, filter }}
-                className="relative z-20 flex-1 flex flex-col gap-6 sm:gap-8 xl:gap-12 justify-end w-full h-full will-change-[opacity,transform,filter] pointer-events-none"
+                className="relative z-20 flex-1 flex flex-col gap-3 sm:gap-8 xl:gap-12 justify-end w-full h-full will-change-[opacity,transform,filter] pointer-events-none"
             >
 
                 <div className="w-full mt-auto flex flex-col justify-center relative z-20 mix-blend-difference">
-                    <div className="flex items-start translate-y-4 sm:translate-y-6 md:translate-y-8 lg:translate-y-10 xl:translate-y-12 2xl:translate-y-14 transition-transform duration-500 pointer-events-auto w-fit">
+                    <div className="flex items-start translate-y-7 sm:translate-y-6 md:translate-y-8 lg:translate-y-10 xl:translate-y-12 2xl:translate-y-14 transition-transform duration-500 pointer-events-auto w-fit">
                         <div className="w-10 h-24 sm:w-12 sm:h-32 md:w-16 md:h-40 lg:w-12 lg:h-32 xl:w-14 xl:h-36 relative shrink-0 mr-2 md:mr-6 lg:mr-6 xl:mr-8 mt-2 md:mt-4 lg:mt-3 xl:mt-4">
                             <div className="absolute top-0 left-full text-4xl sm:text-6xl lg:text-5xl xl:text-6xl text-foreground grunge-text rotate-90 origin-top-left pointer-events-none select-none whitespace-nowrap">
                                 {"////"}

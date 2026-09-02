@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion, AnimatePresence, useScroll, useTransform, useMotionTemplate } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import LanguageSwitcher from "@/components/widgets/language-switcher";
-import ThemeSwitcher from "@/components/widgets/theme-switcher";
+
 import { useLanguage } from "@/providers/language-provider";
 import { useLenis } from "@/providers/smooth-scroll-provider";
 
@@ -169,7 +169,6 @@ export default function Navbar() {
 
           <div className="flex items-center gap-3">
             <LanguageSwitcher />
-            <ThemeSwitcher />
           </div>
         </div>
 
@@ -230,7 +229,6 @@ export default function Navbar() {
               >
                 <div className="flex items-center gap-4">
                   <LanguageSwitcher />
-                  <ThemeSwitcher />
                 </div>
               </motion.div>
             </div>

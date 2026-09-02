@@ -24,6 +24,7 @@ export default function RootNotFound() {
           attribute="class"
           defaultTheme="dark"
           enableSystem={false}
+          forcedTheme="dark"
         >
           <CustomCursor />
           <NotFoundContent dict={enDict} />

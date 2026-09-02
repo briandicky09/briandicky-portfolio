@@ -50,6 +50,7 @@ export default async function LangLayout({
             attribute="class"
             defaultTheme="dark"
             enableSystem={false}
+            forcedTheme="dark"
           >
             <CustomCursor />
             <Preloader />
