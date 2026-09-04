@@ -140,7 +140,12 @@ const ExperienceCard = ({ item, index }: { item: any; index: number }) => {
                                 {item.company}
                             </p>
                         </div>
-                        <div className="shrink-0 order-1 sm:order-2">
+                        <div className="shrink-0 order-1 sm:order-2 flex items-center gap-2 flex-wrap sm:justify-end">
+                            {item.badge && (
+                                <span className="inline-block px-3 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-xs sm:text-sm font-mono font-medium text-foreground tracking-wide shadow-sm">
+                                    {item.badge}
+                                </span>
+                            )}
                             <span className="inline-block px-3 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-xs sm:text-sm font-mono font-medium text-foreground tracking-wide shadow-sm">
                                 {item.period}
                             </span>

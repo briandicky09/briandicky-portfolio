@@ -84,7 +84,7 @@
             "id": 1,
             "type": "training",
             "role": "AI Full-Stack Developer",
-            "company": "Asah by Dicoding | Supported by GoTo",
+            "company": "Asah by Dicoding (Supported by GoTo)",
             "period": "Agu 2026 - Sekarang",
             "description": [
                 "Berpartisipasi dalam program pembelajaran berbasis proyek berorientasi industri yang berfokus pada pengembangan web full-stack dan integrasi AI.",
@@ -102,6 +102,7 @@
             "type": "professional",
             "role": "Fullstack Developer",
             "company": "Javatekno Mitra Solusi",
+            "badge": "Magang",
             "period": "Agu 2026 - Sekarang",
             "description": [
                 "Mengembangkan aplikasi web berbasis Laravel dan PHP untuk Pusat Kos, bekerja melintasi komponen frontend dan backend.",
@@ -118,7 +119,7 @@
             "id": 3,
             "type": "training",
             "role": "Fullstack Web Developer",
-            "company": "Dicoding | Coding Camp powered by DBS Foundation",
+            "company": "Dicoding (Coding Camp powered by DBS Foundation)",
             "period": "Mar 2026 - Jun 2026",
             "description": [
                 "Mengembangkan aplikasi web fullstack yang memiliki 3 modul berbasis CRUD dengan manajemen siklus data lengkap (create, read, update, delete).",
