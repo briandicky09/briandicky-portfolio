@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Syne } from "next/font/google";
+import { Inter, Syne, Playfair_Display } from "next/font/google";
 import "../globals.css";
 import SmoothScroll from "@/providers/smooth-scroll-provider";
 import { ThemeProvider } from "@/providers/theme-provider";
@@ -13,6 +13,7 @@ import { getDictionary, getContents, getSharedData } from "@/lib/loaders";
 
 const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const playfair = Playfair_Display({ subsets: ["latin"], style: ["italic", "normal"], variable: "--font-playfair" });
 
 export const metadata: Metadata = {
   title: "Portfolio Brian Dicky",
@@ -44,7 +45,7 @@ export default async function LangLayout({
 
   return (
     <html lang={lang} suppressHydrationWarning>
-      <body className={`${inter.variable} ${syne.variable} font-sans bg-background text-foreground antialiased`}>
+      <body className={`${inter.variable} ${syne.variable} ${playfair.variable} font-sans bg-background text-foreground antialiased`}>
         <LanguageProvider lang={lang} dictionary={dictionary} contents={contents} shared={shared}>
           <ThemeProvider
             attribute="class"

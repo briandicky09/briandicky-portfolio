@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform, useInView } from "framer-motion";
+import { motion, useScroll, useTransform, useInView, useSpring } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { BlurReveal } from "@/components/effects/blur-reveal";
 import { useLanguage } from "@/providers/language-provider";
@@ -102,84 +102,144 @@ const TimelineLine = () => {
         offset: ["start center", "end center"]
     });
 
-    const height = useTransform(scrollYProgress, [0, 1], ["0%", "100%"]);
+    const smoothProgress = useSpring(scrollYProgress, {
+        stiffness: 70,
+        damping: 26,
+        restDelta: 0.001
+    });
+
+    const height = useTransform(smoothProgress, [0, 1], ["0%", "100%"]);
 
     return (
-        <div ref={lineRef} className="absolute left-[8px] md:left-[12px] -translate-x-1/2 top-4 bottom-0 w-[2px] bg-border/30 rounded-full overflow-hidden">
+        <div 
+            ref={lineRef} 
+            className="absolute left-[8px] md:left-[12px] -translate-x-1/2 top-4 bottom-0 w-[2px] [mask-image:linear-gradient(to_bottom,transparent_0%,black_8%,black_85%,transparent_100%)] pointer-events-none"
+        >
+            {/* Background Track Line */}
+            <div className="absolute inset-0 w-full bg-border/20 rounded-full" />
+
+            {/* Active Animated Smooth Line with Bottom Fade */}
             <motion.div 
                 style={{ height }}
-                className="w-full bg-primary origin-top rounded-full" 
+                className="w-full bg-gradient-to-b from-white via-white to-transparent rounded-full shadow-[0_0_10px_rgba(255,255,255,0.4)] origin-top" 
             />
         </div>
     );
 };
 
+const getYearData = (item: any) => {
+    if (item.year) {
+        const fullYear = String(item.year);
+        const shortYear = fullYear.slice(-2);
+        return { fullYear, shortYear };
+    }
+    const matches = item.period?.match(/\b(20\d{2}|19\d{2})\b/g);
+    if (matches && matches.length > 0) {
+        const fullYear = matches[0];
+        const shortYear = fullYear.slice(-2);
+        return { fullYear, shortYear };
+    }
+    return { fullYear: "2026", shortYear: "26" };
+};
+
 const ExperienceCard = ({ item, index }: { item: any; index: number }) => {
     const dotRef = useRef<HTMLDivElement>(null);
     const isInView = useInView(dotRef, { margin: "0px 0px -50% 0px" });
+    const { fullYear, shortYear } = getYearData(item);
 
     return (
         <BlurReveal delay={index * 0.15}>
-            <div className="relative pl-8 md:pl-16 group">
-                {/* Timeline Dot */}
+            <div className="relative pl-8 sm:pl-12 md:pl-16 group">
+                {/* Timeline Dot (Matching reference design: circular disc with centered bright dot) */}
                 <div 
                     ref={dotRef}
                     className={cn(
-                        "absolute z-10 left-[8px] md:left-[12px] -translate-x-1/2 top-2 w-3 h-3 rounded-full transition-all duration-300 ring-4 ring-background shadow-sm",
-                        isInView ? "bg-primary scale-125 shadow-primary/50" : "bg-border scale-100"
+                        "absolute z-20 left-[8px] md:left-[12px] -translate-x-1/2 top-8 -translate-y-1/2 w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-background/90 dark:bg-[#0b0b0e] border border-white/15 flex items-center justify-center backdrop-blur-md shadow-md transition-all duration-500",
+                        isInView ? "border-white/35 scale-105 shadow-[0_0_14px_rgba(255,255,255,0.2)]" : "border-white/10 scale-95 opacity-80"
                     )} 
-                />
+                >
+                    <div 
+                        className={cn(
+                            "rounded-full transition-all duration-500",
+                            isInView ? "w-2.5 h-2.5 bg-white shadow-[0_0_8px_rgba(255,255,255,0.9)] scale-100" : "w-2 h-2 bg-white/50 scale-90"
+                        )}
+                    />
+                </div>
 
-                <div className="flex flex-col gap-2">
-                    <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 sm:gap-4">
-                        <div className="order-2 sm:order-1 flex flex-col gap-1">
-                            <h3 className="text-xl md:text-2xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors duration-300">
-                                {item.role}
-                            </h3>
-                            <p className="text-sm md:text-base font-medium text-muted-foreground">
-                                {item.company}
-                            </p>
-                        </div>
-                        <div className="shrink-0 order-1 sm:order-2 flex items-center gap-2 flex-wrap sm:justify-end">
-                            {item.badge && (
-                                <span className="inline-block px-3 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-xs sm:text-sm font-mono font-medium text-foreground tracking-wide shadow-sm">
-                                    {item.badge}
-                                </span>
-                            )}
-                            <span className="inline-block px-3 py-1.5 rounded-full border border-primary/20 bg-primary/5 text-xs sm:text-sm font-mono font-medium text-foreground tracking-wide shadow-sm">
-                                {item.period}
-                            </span>
-                        </div>
+                {/* Card Container */}
+                <div className="relative overflow-hidden rounded-2xl md:rounded-3xl border border-white/[0.08] bg-[#0c0c10]/80 dark:bg-[#0b0b0f]/90 backdrop-blur-md p-6 sm:p-8 md:p-10 shadow-2xl transition-all duration-500 hover:border-white/20 group-hover:shadow-primary/5">
+                    {/* Ambient Glow */}
+                    <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/[0.04] rounded-full blur-3xl pointer-events-none transition-opacity duration-500 group-hover:opacity-100 opacity-50" />
+
+                    {/* Background Watermark (Giant 2-digit year watermark on the left, matching reference) */}
+                    <div 
+                        aria-hidden="true"
+                        className="pointer-events-none absolute -bottom-4 sm:-bottom-6 left-1 sm:left-4 text-[9rem] sm:text-[13rem] md:text-[15rem] font-black leading-none select-none tracking-tighter text-foreground/[0.04] dark:text-white/[0.045] transition-all duration-700 ease-out group-hover:text-foreground/[0.07] dark:group-hover:text-white/[0.075] group-hover:scale-105 origin-bottom-left z-0 font-sans"
+                    >
+                        {shortYear}
                     </div>
 
-                    <ul className="mt-4 flex flex-col gap-3 list-none">
-                        {Array.isArray(item.description) ? (
-                            item.description.map((desc: string, i: number) => (
-                                <li key={i} className="relative pl-5 text-foreground/80 text-sm md:text-base leading-relaxed">
-                                    <span className="absolute left-0 top-2.5 w-1.5 h-1.5 rounded-full bg-foreground/30 group-hover:bg-foreground/60 transition-colors duration-300" />
-                                    {desc}
-                                </li>
-                            ))
-                        ) : (
-                            <li className="relative pl-5 text-foreground/80 text-sm md:text-base leading-relaxed">
-                                <span className="absolute left-0 top-2.5 w-1.5 h-1.5 rounded-full bg-foreground/30 group-hover:bg-foreground/60 transition-colors duration-300" />
-                                {item.description}
-                            </li>
-                        )}
-                    </ul>
+                    {/* Content Layer */}
+                    <div className="relative z-10 flex flex-col gap-6">
+                        {/* Header: Left is Role/Company/Period, Right is Index & Stylized Year */}
+                        <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+                            <div className="flex flex-col gap-1.5 max-w-lg">
+                                <div className="flex items-center gap-2.5 flex-wrap">
+                                    <h3 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors duration-300">
+                                        {item.role}
+                                    </h3>
+                                    {item.badge && (
+                                        <span className="px-2.5 py-0.5 rounded-full border border-primary/30 bg-primary/10 text-xs font-mono font-medium text-primary tracking-wide">
+                                            {item.badge}
+                                        </span>
+                                    )}
+                                </div>
+                                <p className="text-sm md:text-base font-medium text-muted-foreground">
+                                    {item.company}
+                                </p>
+                            </div>
 
-                    {item.tags && item.tags.length > 0 && (
-                        <div className="mt-6 flex flex-wrap gap-2">
-                            {item.tags.map((tag: string) => (
-                                <span
-                                    key={tag}
-                                    className="text-[11px] sm:text-xs tracking-wider uppercase text-foreground/70 font-semibold px-3 py-1.5 rounded-md bg-secondary/20 border border-border/40 shadow-sm transition-colors group-hover:border-border/80"
-                                >
-                                    {tag}
+                            {/* Right: Counter and Stylized Display Year */}
+                            <div className="flex flex-row sm:flex-col items-end justify-between sm:justify-start gap-1 shrink-0 pt-1">
+                                <span className="font-mono text-xs sm:text-sm text-muted-foreground/60 tracking-widest uppercase">
+                                    {String(index + 1).padStart(2, "0")}
                                 </span>
-                            ))}
+                                <span className="font-serif italic font-black text-4xl sm:text-5xl md:text-6xl text-foreground/90 tracking-tight select-none">
+                                    {fullYear}
+                                </span>
+                            </div>
                         </div>
-                    )}
+
+                        {/* Description */}
+                        <div className="text-sm sm:text-base text-foreground/80 leading-relaxed">
+                            {Array.isArray(item.description) ? (
+                                <ul className="flex flex-col gap-2.5 list-none">
+                                    {item.description.map((desc: string, i: number) => (
+                                        <li key={i} className="relative pl-5 text-foreground/80 text-sm md:text-base leading-relaxed">
+                                            <span className="absolute left-0 top-2.5 w-1.5 h-1.5 rounded-full bg-primary/50 group-hover:bg-primary transition-colors duration-300" />
+                                            {desc}
+                                        </li>
+                                    ))}
+                                </ul>
+                            ) : (
+                                <p className="text-foreground/80 leading-relaxed">{item.description}</p>
+                            )}
+                        </div>
+
+                        {/* Tags / Pills matching reference badge style */}
+                        {item.tags && item.tags.length > 0 && (
+                            <div className="pt-4 border-t border-white/[0.06] flex flex-wrap items-center justify-end gap-2">
+                                {item.tags.map((tag: string) => (
+                                    <span
+                                        key={tag}
+                                        className="px-3.5 py-1.5 rounded-full border border-white/10 bg-white/[0.03] text-xs font-mono font-medium text-foreground/75 group-hover:text-foreground group-hover:border-white/20 transition-all shadow-sm"
+                                    >
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        )}
+                    </div>
                 </div>
             </div>
         </BlurReveal>

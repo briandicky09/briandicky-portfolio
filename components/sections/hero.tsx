@@ -96,7 +96,7 @@ export default function Hero() {
             >
 
                 <div className="w-full mt-auto flex flex-col justify-center relative z-20 mix-blend-difference">
-                    <div className="flex items-start translate-y-7 sm:translate-y-6 md:translate-y-8 lg:translate-y-10 xl:translate-y-12 2xl:translate-y-14 transition-transform duration-500 pointer-events-auto w-fit">
+                    <div className="flex items-start translate-y-3 sm:translate-y-2 md:translate-y-4 lg:translate-y-4 xl:translate-y-5 2xl:translate-y-6 transition-transform duration-500 pointer-events-auto w-fit">
                         <div className="w-10 h-24 sm:w-12 sm:h-32 md:w-16 md:h-40 lg:w-12 lg:h-32 xl:w-14 xl:h-36 relative shrink-0 mr-2 md:mr-6 lg:mr-6 xl:mr-8 mt-2 md:mt-4 lg:mt-3 xl:mt-4">
                             <div className="absolute top-0 left-full text-4xl sm:text-6xl lg:text-5xl xl:text-6xl text-foreground grunge-text rotate-90 origin-top-left pointer-events-none select-none whitespace-nowrap">
                                 {"////"}
@@ -104,7 +104,7 @@ export default function Hero() {
                         </div>
 
                         <div className="overflow-hidden">
-                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl 3xl:text-[110px] font-black tracking-tighter leading-[0.85] text-foreground uppercase whitespace-nowrap pr-2 md:pr-4">
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-8xl 3xl:text-[110px] font-black tracking-tight leading-[1.0] text-foreground uppercase whitespace-nowrap pr-2 md:pr-4">
                                 Brian
                                 <br />
                                 <span className="text-foreground/80">

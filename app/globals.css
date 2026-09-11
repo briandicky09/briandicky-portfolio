@@ -48,6 +48,7 @@
   --breakpoint-3xl: 1920px;
   --spacing-container: var(--container-spacing);
   --animate-scroll: scroll 60s linear infinite;
+  --font-serif: var(--font-playfair), Georgia, serif;
 }
 
 @keyframes scroll {
