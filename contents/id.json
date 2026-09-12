@@ -77,6 +77,41 @@
                 "Qt Creator",
                 "Qt Widgets"
             ]
+        },
+        {
+            "id": "5",
+            "title": "SIPEMMA",
+            "category": "Web Application",
+            "year": "2026",
+            "description": "Membangun aplikasi web Point of Sale (POS) dan manajemen operasional restoran terpadu menggunakan Laravel 13 dan Tailwind CSS v4. Fitur mencakup alur kasir interaktif dengan keranjang pesanan real-time, tab kategori menu, penanganan pesanan Dine In dan Take Away, kalkulasi otomatis pajak PB1 (10%), cetak struk pembayaran digital, manajemen katalog menu (CRUD) dan kontrol stok, dashboard KPI analitik penjualan, serta asisten pintar AI bertenaga Google Gemini (gemini-3.6-flash) untuk analisis bisnis dan strategi operasional.",
+            "image": "/projects/sipemma.png",
+            "demo": "",
+            "repo": "https://github.com/briandicky09/food-order/tree/main",
+            "stack": [
+                "Laravel 13",
+                "PHP",
+                "Tailwind CSS",
+                "Flowbite",
+                "Google Gemini AI",
+                "SQLite"
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Nalar",
+            "category": "Web Application",
+            "year": "2026",
+            "description": "Mengembangkan antarmuka aplikasi web AI learning companion personal yang dirancang untuk membantu mahasiswa memahami materi perkuliahan secara mendalam. Dibangun menggunakan Next.js (App Router), React 19, TypeScript, Tailwind CSS, dan animasi Framer Motion. Menampilkan landing page modern serta workspace interaktif untuk mengekstrak modul PDF perkuliahan, mendeteksi kelemahan pemahaman, dan membimbing belajar secara adaptif layaknya dosen privat.",
+            "image": "/projects/nalar.png",
+            "demo": "",
+            "repo": "https://github.com/briandicky09/nalar-ai-learning-companion",
+            "stack": [
+                "Next.js",
+                "React 19",
+                "TypeScript",
+                "Tailwind CSS",
+                "Framer Motion"
+            ]
         }
     ],
     "experience": [

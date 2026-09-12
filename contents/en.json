@@ -77,6 +77,41 @@
                 "Qt Creator",
                 "Qt Widgets"
             ]
+        },
+        {
+            "id": "5",
+            "title": "SIPEMMA",
+            "category": "Web Application",
+            "year": "2026",
+            "description": "Built an integrated Point of Sale (POS) and restaurant management web application using Laravel 13 and Tailwind CSS v4. Features an interactive cashier workflow with real-time cart, category tabs, Dine In and Take Away order handling, automatic 10% PB1 tax calculation, digital receipt generation, menu CRUD with stock tracking, a comprehensive sales analytics KPI dashboard, and an integrated AI assistant powered by Google Gemini (gemini-3.6-flash) for business analytics and strategic insights.",
+            "image": "/projects/sipemma.png",
+            "demo": "",
+            "repo": "https://github.com/briandicky09/food-order/tree/main",
+            "stack": [
+                "Laravel 13",
+                "PHP",
+                "Tailwind CSS",
+                "Flowbite",
+                "Google Gemini AI",
+                "SQLite"
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Nalar",
+            "category": "Web Application",
+            "year": "2026",
+            "description": "Developed an AI-powered personalized learning companion web application designed to help university students master academic subjects deeply. Built with Next.js (App Router), React 19, TypeScript, Tailwind CSS, and Framer Motion. Features a modern landing page and interactive study workspace that extracts lecture PDFs, identifies conceptual comprehension weaknesses, and delivers adaptive private-tutor guidance.",
+            "image": "/projects/nalar.png",
+            "demo": "",
+            "repo": "https://github.com/briandicky09/nalar-ai-learning-companion",
+            "stack": [
+                "Next.js",
+                "React 19",
+                "TypeScript",
+                "Tailwind CSS",
+                "Framer Motion"
+            ]
         }
     ],
     "experience": [
