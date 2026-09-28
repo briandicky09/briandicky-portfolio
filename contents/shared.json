@@ -21,6 +21,31 @@
     "stack": {
         "frontend": [
             {
+                "name": "React",
+                "icon": "/stack/react.svg",
+                "featured": true
+            },
+            {
+                "name": "Next.js",
+                "icon": "/stack/nextjs.svg",
+                "featured": true
+            },
+            {
+                "name": "TypeScript",
+                "icon": "/stack/typescript.svg",
+                "featured": true
+            },
+            {
+                "name": "Tailwind CSS",
+                "icon": "/stack/tailwindcss.svg",
+                "featured": true
+            },
+            {
+                "name": "JavaScript (ES6+)",
+                "icon": "/stack/javascript.svg",
+                "featured": true
+            },
+            {
                 "name": "HTML5",
                 "icon": "/stack/html5.svg",
                 "featured": true
@@ -31,21 +56,12 @@
                 "featured": true
             },
             {
-                "name": "JavaScript (ES6+)",
-                "icon": "/stack/javascript.svg",
-                "featured": true
-            },
-            {
                 "name": "Bootstrap",
                 "icon": "/stack/bootstrap.svg"
             },
             {
-                "name": "Tailwind CSS",
-                "icon": "/stack/tailwindcss.svg"
-            },
-            {
-                "name": "React",
-                "icon": "/stack/react.svg"
+                "name": "Framer Motion",
+                "icon": "/stack/framermotion.svg"
             },
             {
                 "name": "Responsive Design",
@@ -54,22 +70,31 @@
         ],
         "backend": [
             {
-                "name": "PHP",
-                "icon": "/stack/php.svg",
-                "featured": true
-            },
-            {
                 "name": "Laravel",
                 "icon": "/stack/laravel.svg",
                 "featured": true
             },
             {
-                "name": "CRUD Operations",
-                "icon": "/stack/mysql.svg"
+                "name": "PHP",
+                "icon": "/stack/php.svg",
+                "featured": true
             },
             {
-                "name": "MVC",
+                "name": "Inertia.js",
+                "icon": "/stack/react.svg",
+                "featured": true
+            },
+            {
+                "name": "RESTful APIs",
+                "icon": "/stack/javascript.svg"
+            },
+            {
+                "name": "MVC Architecture",
                 "icon": "/stack/php.svg"
+            },
+            {
+                "name": "Blade Templating",
+                "icon": "/stack/laravel.svg"
             },
             {
                 "name": "Frontend–Backend Integration",
@@ -83,7 +108,12 @@
                 "featured": true
             },
             {
-                "name": "Basic Database Design",
+                "name": "SQLite",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+                "featured": true
+            },
+            {
+                "name": "Database Design & ERD",
                 "icon": "/stack/mysql.svg"
             }
         ],
@@ -112,24 +142,32 @@
                 "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
             },
             {
-                "name": "XAMPP",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-            },
-            {
                 "name": "Vite",
                 "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg"
             },
             {
-                "name": "Figma",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                "name": "Google Gemini AI API",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg"
+            },
+            {
+                "name": "Midtrans Snap",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+            },
+            {
+                "name": "Postman",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
             },
             {
                 "name": "Vercel",
                 "icon": "/stack/vercel.svg"
             },
             {
-                "name": "Draw.io",
-                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                "name": "Figma",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+            },
+            {
+                "name": "XAMPP",
+                "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
             }
         ]
     }

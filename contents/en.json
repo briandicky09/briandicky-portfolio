@@ -1,8 +1,8 @@
 {
     "about": {
-        "intro": "I'm a *Fullstack Web Developer* focused on building **clean, responsive, and maintainable** web applications.",
-        "description": "Fifth-semester Informatics undergraduate at UPN \"Veteran\" Jawa Timur with over 1.5 years of hands-on, project-based experience in fullstack web development. Skilled in PHP, Laravel, HTML5, CSS3, JavaScript, and MySQL. Currently expanding my frontend skills with React and Vite.",
-        "full": "Hi, I'm **Brian Dicky Vanka Andaraneva** — a Fullstack Web Developer based in Sidoarjo, East Java.\n\nFifth-semester Informatics undergraduate at **UPN \"Veteran\" Jawa Timur** with over 1.5 years of hands-on, project-based experience in fullstack web development. Skilled in backend development with **PHP and Laravel**, and frontend development with **HTML5, CSS3, and JavaScript**, with practical experience in MySQL-backed MVC architecture, CRUD operations, and frontend–backend integration.\n\nCurrently working as a Fullstack Developer at Javatekno Mitra Solusi, building the Pusat Kos web application in Laravel, and reinforcing these skills through Coding Camp project work and independent projects in inventory management and desktop application development, while currently expanding frontend development skills with **React** and **Vite**."
+        "intro": "I'm a *Fullstack Web Developer* focused on building **modern, high-performance, and scalable** web applications.",
+        "description": "Fifth-semester Informatics undergraduate at UPN \"Veteran\" Jawa Timur with over 1.5 years of hands-on, project-based experience in fullstack web development. Experienced in building modern web systems using PHP, Laravel, React, Next.js, TypeScript, Tailwind CSS, and MySQL, with a focus on clean architecture and AI integration.",
+        "full": "Hi, I'm **Brian Dicky Vanka Andaraneva** — a Fullstack Web Developer based in Sidoarjo, East Java.\n\nFifth-semester Informatics undergraduate at **UPN \"Veteran\" Jawa Timur** with over 1.5 years of hands-on, project-based experience in fullstack web development. Proficient in backend engineering with **PHP and Laravel**, modern frontend development with **React, Next.js, TypeScript, and Tailwind CSS**, and artificial intelligence API integration (**Google Gemini AI**).\n\nCurrently working as a Fullstack Developer at **Javatekno Mitra Solusi**, building the **PUSATKOS** web platform in Laravel 12 and MySQL with structured MVC architecture and multi-role user workflows (public visitors, kos owners, and customers). Committed to delivering clean code architecture, optimal performance, and intuitive user experiences."
     },
     "manifesto": [
         "CLEAN CODE ARCHITECTURE",
@@ -17,49 +17,54 @@
             "id": "1",
             "title": "PUSATKOS",
             "category": "Web Application",
-            "year": "Present",
-            "description": "Currently in Development / Ongoing. Built the owner and customer web flows of a Laravel 12 kos-rental platform, implementing MVC controllers, Eloquent models, routes, and Blade views based on a converted frontend template. Pages and forms currently run on structured dummy data from each controller, with database migrations, authentication, and live CRUD as the next milestones.",
+            "year": "2026",
+            "description": "Built an integrated boarding house (kos) discovery and rental management web application based on Laravel 12 and PHP 8.2. Engineered for three core user roles: public visitors exploring and searching featured kos recommendations, kos owners managing property listings (CRUD), reviews, statistics, and notifications through a dedicated dashboard, and customers/members managing room bookings, digital invoices, and profiles. Implemented modular MVC architecture, role-based routing, and MySQL database integration.",
             "image": "/projects/pusatkos-new.jpeg",
             "demo": "",
             "repo": "https://github.com/briandicky09/PUSATKOS",
             "stack": [
                 "Laravel 12",
-                "PHP",
+                "PHP 8.2",
                 "Blade",
-                "Bootstrap"
+                "Bootstrap",
+                "MySQL"
             ]
         },
         {
             "id": "2",
-            "title": "PULSE",
+            "title": "Tanggapin",
             "category": "Web Application",
-            "year": "2025",
-            "description": "Built a personal inventory management web application for restaurant/F&B operations, implementing CRUD-based stock, supplier, usage, and waste tracking with search, filtering, sorting, and CSV export. Implemented a KPI dashboard with stock movement visualization, automatic notifications, and confirmation dialogs, using localStorage/sessionStorage for browser-based data persistence.",
-            "image": "/projects/pulse-new.png",
-            "demo": "https://pulse-manager-new.vercel.app/",
-            "repo": "https://github.com/briandicky09/project-pulse-manager",
+            "year": "2026",
+            "description": "Built an integrated school operational and management platform designed to connect student data, early warning risk detection, case workflows, parent communication, and payment tracking into a structured decision-making ecosystem. Features multi-role access (Super Admin, Principal, BK Counselor, Homeroom Teacher, Cashier, Parents), automated academic & attendance risk alerts, incident response checklists, and BOS financial validation.",
+            "image": "/projects/tanggapin.png",
+            "demo": "",
+            "repo": "https://github.com/briandicky09/tanggapin",
             "stack": [
-                "HTML5",
+                "Laravel 13",
+                "React 19",
+                "Inertia.js",
+                "TypeScript",
                 "Tailwind CSS",
-                "JavaScript",
-                "localStorage",
-                "sessionStorage"
+                "Radix UI",
+                "PHP 8.3"
             ]
         },
         {
             "id": "3",
-            "title": "Kopi Nusantara",
-            "category": "E-Commerce",
-            "year": "2025",
-            "description": "Developed a multi-page responsive website for an Indonesian coffee brand, including Home, Product, Gallery, About, Order, and Contact pages. Built a responsive navbar with active-link highlighting using vanilla JavaScript, styled with Bootstrap 5 and custom CSS.",
-            "image": "/projects/kopi-nusantara-new.png",
-            "demo": "https://pemweb-kopi-nusantara.vercel.app/",
-            "repo": "https://github.com/briandicky09/pemweb-kopi-nusantara",
+            "title": "OLARA",
+            "category": "Web Application",
+            "year": "2026",
+            "description": "Developed a smart circular waste management and eco-wellness platform integrating AI-powered waste scanning, on-demand doorstep pickup logistics, drop-off bank directory, circular raw material marketplace, and instant e-wallet rewards. Features an AI scanner for automated recyclable material detection with real-time market value estimation, fleet scheduling (Eco Bike, Tosa, Van Box), Midtrans Snap payment integration, eco-points wallet, and carbon footprint reduction analytics.",
+            "image": "/projects/olara.png",
+            "demo": "",
+            "repo": "https://github.com/briandicky09/olara",
             "stack": [
-                "HTML5",
-                "CSS3",
-                "Bootstrap",
-                "JavaScript"
+                "Laravel 13",
+                "PHP 8.3",
+                "Tailwind CSS v4",
+                "Vite",
+                "Midtrans Snap",
+                "SQLite / MySQL"
             ]
         },
         {
@@ -83,17 +88,18 @@
             "title": "SIPEMMA",
             "category": "Web Application",
             "year": "2026",
-            "description": "Built an integrated Point of Sale (POS) and restaurant management web application using Laravel 13 and Tailwind CSS v4. Features an interactive cashier workflow with real-time cart, category tabs, Dine In and Take Away order handling, automatic 10% PB1 tax calculation, digital receipt generation, menu CRUD with stock tracking, a comprehensive sales analytics KPI dashboard, and an integrated AI assistant powered by Google Gemini (gemini-3.6-flash) for business analytics and strategic insights.",
+            "description": "Built an integrated modern Point of Sale (POS) and restaurant operations web application powered by Laravel 13, PHP 8.3+, and Tailwind CSS v4 + Flowbite. Features an interactive cashier workflow with real-time cart, Dine In (table selection) & Take Away order support, automatic 10% PB1 tax calculation, digital receipt printing, full menu CRUD with automatic inventory tracking, operational & sales KPI analytics dashboard, and an AI smart assistant powered by Google Gemini (gemini-3.6-flash) for culinary business analytics and promotional strategies.",
             "image": "/projects/sipemma.png",
             "demo": "",
-            "repo": "https://github.com/briandicky09/food-order/tree/main",
+            "repo": "https://github.com/briandicky09/food-order",
             "stack": [
                 "Laravel 13",
-                "PHP",
-                "Tailwind CSS",
+                "PHP 8.3",
+                "Tailwind CSS v4",
                 "Flowbite",
                 "Google Gemini AI",
-                "SQLite"
+                "SQLite / MySQL",
+                "Vite"
             ]
         },
         {
@@ -117,6 +123,27 @@
     "experience": [
         {
             "id": 1,
+            "type": "professional",
+            "role": "Fullstack Web Developer",
+            "company": "Javatekno Mitra Solusi",
+            "badge": "Intern",
+            "period": "Aug 2026 - Present",
+            "description": [
+                "Developing the PUSATKOS web application using Laravel 12 and PHP 8.2, handling both responsive frontend Blade/Bootstrap views and backend MVC architecture.",
+                "Engineered complete workflows for 3 core roles: Public visitors (search, filter & featured recommendations), Kos Owners (property listing CRUD, analytics dashboard, reviews, statistics, notifications), and Customers/Members (booking flow, digital invoices, and profile management).",
+                "Structured modular MVC layers (controllers, Eloquent models, Blade views), role-based routing systems, and MySQL relational database integration."
+            ],
+            "tags": [
+                "Laravel 12",
+                "PHP 8.2",
+                "Blade",
+                "Bootstrap",
+                "MySQL",
+                "MVC Architecture"
+            ]
+        },
+        {
+            "id": 2,
             "type": "training",
             "role": "AI Full-Stack Developer",
             "company": "Asah by Dicoding (Supported by GoTo)",
@@ -130,24 +157,6 @@
                 "React",
                 "JavaScript",
                 "AI Integration"
-            ]
-        },
-        {
-            "id": 2,
-            "type": "professional",
-            "role": "Fullstack Developer",
-            "company": "Javatekno Mitra Solusi",
-            "badge": "Intern",
-            "period": "Aug 2026 - Present",
-            "description": [
-                "Developing a Laravel and PHP-based web application for Pusat Kos, working across frontend and backend components.",
-                "Structuring the application's MVC layer (controllers, Eloquent models, Blade views) in a local XAMPP environment, in preparation for MySQL database integration and live CRUD functionality."
-            ],
-            "tags": [
-                "Laravel",
-                "PHP",
-                "MVC",
-                "Frontend-Backend Integration"
             ]
         },
         {

@@ -1,8 +1,8 @@
 {
     "about": {
-        "intro": "Saya seorang *Fullstack Web Developer* yang berfokus membangun **aplikasi web yang bersih, responsif, dan mudah dikelola**.",
-        "description": "Mahasiswa Informatika semester lima di UPN \"Veteran\" Jawa Timur dengan pengalaman berbasis proyek lebih dari 1,5 tahun dalam fullstack web development. Terampil dalam PHP, Laravel, HTML5, CSS3, JavaScript, dan MySQL. Saat ini memperluas keterampilan frontend dengan React dan Vite.",
-        "full": "Halo, saya **Brian Dicky Vanka Andaraneva** — seorang Fullstack Web Developer yang berbasis di Sidoarjo, Jawa Timur.\n\nMahasiswa Informatika semester lima di **UPN \"Veteran\" Jawa Timur** dengan pengalaman langsung berbasis proyek lebih dari 1,5 tahun dalam fullstack web development. Terampil dalam backend development dengan **PHP dan Laravel**, serta frontend development dengan **HTML5, CSS3, dan JavaScript**, dengan pengalaman praktis dalam arsitektur MVC berbasis MySQL, operasi CRUD, dan integrasi frontend-backend.\n\nSaat ini bekerja sebagai Fullstack Developer di Javatekno Mitra Solusi, membangun aplikasi web Pusat Kos menggunakan Laravel, dan memperkuat keterampilan ini melalui proyek Coding Camp serta proyek independen dalam manajemen inventaris dan pengembangan aplikasi desktop, sembari terus memperluas keterampilan frontend development dengan **React** dan **Vite**."
+        "intro": "Saya seorang *Fullstack Web Developer* yang berfokus membangun **aplikasi web modern, performan, dan terukur**.",
+        "description": "Mahasiswa Informatika semester lima di UPN \"Veteran\" Jawa Timur dengan pengalaman berbasis proyek lebih dari 1,5 tahun dalam fullstack web development. Berpengalaman membangun sistem web modern menggunakan PHP, Laravel, React, Next.js, TypeScript, Tailwind CSS, dan MySQL, dengan fokus pada arsitektur bersih dan integrasi AI.",
+        "full": "Halo, saya **Brian Dicky Vanka Andaraneva** — seorang Fullstack Web Developer yang berbasis di Sidoarjo, Jawa Timur.\n\nMahasiswa Informatika semester lima di **UPN \"Veteran\" Jawa Timur** dengan pengalaman langsung berbasis proyek lebih dari 1,5 tahun dalam fullstack web development. Menguasai backend development dengan **PHP dan Laravel**, frontend modern dengan **React, Next.js, TypeScript, dan Tailwind CSS**, serta integrasi API kecerdasan buatan (**Google Gemini AI**).\n\nSaat ini bekerja sebagai Fullstack Developer di **Javatekno Mitra Solusi**, mengembangkan platform web **PUSATKOS** berbasis Laravel 12 dan MySQL dengan arsitektur MVC terstruktur serta manajemen peran multi-user (pengunjung, owner, dan customer). Berkomitmen menghadirkan arsitektur kode yang bersih, performa optimal, dan pengalaman pengguna yang intuitif."
     },
     "manifesto": [
         "ARSITEKTUR KODE BERSIH",
@@ -17,49 +17,54 @@
             "id": "1",
             "title": "PUSATKOS",
             "category": "Web Application",
-            "year": "Sekarang",
-            "description": "Currently in Development / Ongoing. Membangun alur web owner dan customer untuk platform kos-rental menggunakan Laravel 12, mengimplementasikan controller MVC, model Eloquent, rute, dan Blade views berdasarkan template frontend. Halaman dan form saat ini berjalan dengan dummy data dari setiap controller, dengan migrasi database, autentikasi, dan live CRUD sebagai tahap selanjutnya.",
+            "year": "2026",
+            "description": "Membangun aplikasi web pencarian dan pengelolaan kos terpadu berbasis Laravel 12 dan PHP 8.2. Dirancang melayani tiga peran utama: pengunjung umum yang mencari dan mengeksplorasi rekomendasi kos unggulan, owner kos yang mengelola listing properti (CRUD), ulasan, statistik, dan notifikasi melalui dashboard analitik, serta customer/member untuk proses booking kamar kos, invoice digital, dan profil pengguna. Mengimplementasikan arsitektur MVC terstruktur, routing berbasis hak akses (role-based), dan integrasi database MySQL.",
             "image": "/projects/pusatkos-new.jpeg",
             "demo": "",
             "repo": "https://github.com/briandicky09/PUSATKOS",
             "stack": [
                 "Laravel 12",
-                "PHP",
+                "PHP 8.2",
                 "Blade",
-                "Bootstrap"
+                "Bootstrap",
+                "MySQL"
             ]
         },
         {
             "id": "2",
-            "title": "PULSE",
+            "title": "Tanggapin",
             "category": "Web Application",
-            "year": "2025",
-            "description": "Membangun aplikasi manajemen inventaris web pribadi untuk operasional restoran/F&B, mengimplementasikan manajemen stok, pemasok, penggunaan, dan limbah berbasis CRUD dengan fitur pencarian, filter, pengurutan, dan ekspor CSV. Mengimplementasikan dashboard KPI dengan visualisasi pergerakan stok, notifikasi otomatis, dan dialog konfirmasi, menggunakan localStorage/sessionStorage untuk persistensi data di browser.",
-            "image": "/projects/pulse-new.png",
-            "demo": "https://pulse-manager-new.vercel.app/",
-            "repo": "https://github.com/briandicky09/project-pulse-manager",
+            "year": "2026",
+            "description": "Membangun platform operasional dan manajemen sekolah terpadu yang menghubungkan data siswa, deteksi dini (early warning system) untuk risiko akademik dan kedisiplinan, manajemen kasus dan konseling, komunikasi terstruktur dengan orang tua, serta pelacakan pembayaran. Dilengkapi akses multi-role (Kepala Sekolah, Guru BK, Wali Kelas, Bendahara, Orang Tua), dashboard pemantauan kelas real-time, checklist respons insiden, serta validasi keuangan dana BOS.",
+            "image": "/projects/tanggapin.png",
+            "demo": "",
+            "repo": "https://github.com/briandicky09/tanggapin",
             "stack": [
-                "HTML5",
+                "Laravel 13",
+                "React 19",
+                "Inertia.js",
+                "TypeScript",
                 "Tailwind CSS",
-                "JavaScript",
-                "localStorage",
-                "sessionStorage"
+                "Radix UI",
+                "PHP 8.3"
             ]
         },
         {
             "id": "3",
-            "title": "Kopi Nusantara",
-            "category": "E-Commerce",
-            "year": "2025",
-            "description": "Mengembangkan situs web responsif multi-halaman untuk merek kopi Indonesia, termasuk halaman Home, Produk, Galeri, Tentang, Pemesanan, dan Kontak. Membangun navbar responsif dengan penyorotan link aktif menggunakan vanilla JavaScript, disesuaikan dengan Bootstrap 5 dan CSS kustom.",
-            "image": "/projects/kopi-nusantara-new.png",
-            "demo": "https://pemweb-kopi-nusantara.vercel.app/",
-            "repo": "https://github.com/briandicky09/pemweb-kopi-nusantara",
+            "title": "OLARA",
+            "category": "Web Application",
+            "year": "2026",
+            "description": "Mengembangkan platform ekosistem sirkular pengelolaan sampah cerdas (Smart Circular Waste Management) yang mengintegrasikan AI Smart Waste Scanner, penjemputan armada on-demand, direktori drop-off bank sampah/TPS3R, marketplace komoditas daur ulang, serta reward dompet digital. Menghadirkan pendeteksian kategori sampah otomatis dan estimasi harga pasar real-time via AI scanner, penjadwalan armada jemput, gateway pembayaran Midtrans Snap, dompet poin sirkular, dan analitik reduksi emisi karbon (kg CO₂ avoided).",
+            "image": "/projects/olara.png",
+            "demo": "",
+            "repo": "https://github.com/briandicky09/olara",
             "stack": [
-                "HTML5",
-                "CSS3",
-                "Bootstrap",
-                "JavaScript"
+                "Laravel 13",
+                "PHP 8.3",
+                "Tailwind CSS v4",
+                "Vite",
+                "Midtrans Snap",
+                "SQLite / MySQL"
             ]
         },
         {
@@ -83,17 +88,18 @@
             "title": "SIPEMMA",
             "category": "Web Application",
             "year": "2026",
-            "description": "Membangun aplikasi web Point of Sale (POS) dan manajemen operasional restoran terpadu menggunakan Laravel 13 dan Tailwind CSS v4. Fitur mencakup alur kasir interaktif dengan keranjang pesanan real-time, tab kategori menu, penanganan pesanan Dine In dan Take Away, kalkulasi otomatis pajak PB1 (10%), cetak struk pembayaran digital, manajemen katalog menu (CRUD) dan kontrol stok, dashboard KPI analitik penjualan, serta asisten pintar AI bertenaga Google Gemini (gemini-3.6-flash) untuk analisis bisnis dan strategi operasional.",
+            "description": "Membangun aplikasi web Point of Sale (POS) dan manajemen operasional restoran modern terpadu menggunakan Laravel 13, PHP 8.3+, dan Tailwind CSS v4 + Flowbite. Menghadirkan kasir POS interaktif dengan keranjang belanja real-time, fleksibilitas pesanan Dine In (nomor meja) maupun Take Away, kalkulasi otomatis pajak restoran PB1 (10%), cetak struk pembayaran digital, manajemen katalog menu & kontrol stok otomatis, dashboard KPI dan analitik laporan penjualan, serta chatbot asisten pintar AI bertenaga Google Gemini (gemini-3.6-flash) untuk konsultasi analisis bisnis dan strategi promo kuliner.",
             "image": "/projects/sipemma.png",
             "demo": "",
-            "repo": "https://github.com/briandicky09/food-order/tree/main",
+            "repo": "https://github.com/briandicky09/food-order",
             "stack": [
                 "Laravel 13",
-                "PHP",
-                "Tailwind CSS",
+                "PHP 8.3",
+                "Tailwind CSS v4",
                 "Flowbite",
                 "Google Gemini AI",
-                "SQLite"
+                "SQLite / MySQL",
+                "Vite"
             ]
         },
         {
@@ -117,13 +123,34 @@
     "experience": [
         {
             "id": 1,
-            "type": "training",
-            "role": "AI Full-Stack Developer",
-            "company": "Asah by Dicoding (Supported by GoTo)",
+            "type": "professional",
+            "role": "Fullstack Web Developer",
+            "company": "Javatekno Mitra Solusi",
+            "badge": "Magang",
             "period": "Agu 2026 - Sekarang",
             "description": [
-                "Berpartisipasi dalam program pembelajaran berbasis proyek berorientasi industri yang berfokus pada pengembangan web full-stack dan integrasi AI.",
-                "Mengembangkan keterampilan meliputi frontend, backend, React, JavaScript, AI, dan pengembangan aplikasi web melalui pembelajaran terstruktur dan proyek langsung."
+                "Mengembangkan aplikasi web PUSATKOS menggunakan Laravel 12 dan PHP 8.2, mencakup frontend Blade & Bootstrap hingga arsitektur backend MVC.",
+                "Mengimplementasikan alur lengkap untuk 3 peran pengguna: Pengunjung umum (eksplorasi & rekomendasi kos), Owner kos (dashboard analitik, manajemen listing kos CRUD, penilaian, statistik, notifikasi), dan Customer/Member (booking kos, invoice digital, dan profil).",
+                "Menyusun arsitektur layer MVC (controller, model Eloquent, Blade views), routing berbasis peran (role-based access), serta integrasi database MySQL."
+            ],
+            "tags": [
+                "Laravel 12",
+                "PHP 8.2",
+                "Blade",
+                "Bootstrap",
+                "MySQL",
+                "MVC Architecture"
+            ]
+        },
+        {
+            "id": 2,
+            "type": "training",
+            "role": "AI Full-Stack Developer",
+            "company": "Asah by Dicoding (Didukung oleh GoTo)",
+            "period": "Agu 2026 - Sekarang",
+            "description": [
+                "Mengikuti program pembelajaran berbasis proyek berorientasi industri yang berfokus pada pengembangan web full-stack dan integrasi AI.",
+                "Mengembangkan keahlian menyeluruh mencakup frontend, backend, React, JavaScript, AI, dan arsitektur aplikasi web modern melalui kurikulum terstruktur dan proyek langsung."
             ],
             "tags": [
                 "Fullstack Web Development",
@@ -133,32 +160,14 @@
             ]
         },
         {
-            "id": 2,
-            "type": "professional",
-            "role": "Fullstack Developer",
-            "company": "Javatekno Mitra Solusi",
-            "badge": "Magang",
-            "period": "Agu 2026 - Sekarang",
-            "description": [
-                "Mengembangkan aplikasi web berbasis Laravel dan PHP untuk Pusat Kos, bekerja melintasi komponen frontend dan backend.",
-                "Menyusun arsitektur layer MVC (controller, model Eloquent, Blade views) di environment XAMPP lokal, sebagai persiapan untuk integrasi database MySQL dan fungsionalitas live CRUD."
-            ],
-            "tags": [
-                "Laravel",
-                "PHP",
-                "MVC",
-                "Frontend-Backend Integration"
-            ]
-        },
-        {
             "id": 3,
             "type": "training",
             "role": "Fullstack Web Developer",
-            "company": "Dicoding (Coding Camp powered by DBS Foundation)",
+            "company": "Dicoding (Coding Camp didukung oleh DBS Foundation)",
             "period": "Mar 2026 - Jun 2026",
             "description": [
-                "Mengembangkan aplikasi web fullstack yang memiliki 3 modul berbasis CRUD dengan manajemen siklus data lengkap (create, read, update, delete).",
-                "Mengimplementasikan integrasi frontend-backend dengan konektivitas database di lingkungan rekayasa perangkat lunak berbasis proyek."
+                "Membangun aplikasi web fullstack yang memiliki 3 modul berbasis CRUD dengan manajemen siklus data lengkap (create, read, update, delete).",
+                "Mengimplementasikan integrasi frontend-backend serta konektivitas basis data dalam lingkungan rekayasa perangkat lunak berbasis proyek."
             ],
             "tags": [
                 "Frontend-Backend Integration",

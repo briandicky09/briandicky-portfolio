@@ -70,24 +70,26 @@ export default function Roadmap() {
                     </div>
 
                     {/* Training & Bootcamps */}
-                    <div className="relative">
-                        <BlurReveal>
-                            <div className="mb-10 flex items-center gap-3">
-                                <GraduationCap className="w-5 h-5 text-muted-foreground" strokeWidth={1.5} />
-                                <h3 className="text-sm md:text-base font-medium tracking-[0.2em] uppercase text-muted-foreground">
-                                    {dict.trainingExperience}
-                                </h3>
-                            </div>
-                        </BlurReveal>
+                    {content.experience?.some((i: any) => i.type === 'training') && (
                         <div className="relative">
-                            <TimelineLine />
-                            <div className="flex flex-col gap-12 md:gap-16 w-full py-4">
-                                {content.experience?.filter((i: any) => i.type === 'training').map((item: any, index: number) => (
-                                    <ExperienceCard key={item.id} item={item} index={index} />
-                                ))}
+                            <BlurReveal>
+                                <div className="mb-10 flex items-center gap-3">
+                                    <GraduationCap className="w-5 h-5 text-muted-foreground" strokeWidth={1.5} />
+                                    <h3 className="text-sm md:text-base font-medium tracking-[0.2em] uppercase text-muted-foreground">
+                                        {dict.trainingExperience}
+                                    </h3>
+                                </div>
+                            </BlurReveal>
+                            <div className="relative">
+                                <TimelineLine />
+                                <div className="flex flex-col gap-12 md:gap-16 w-full py-4">
+                                    {content.experience?.filter((i: any) => i.type === 'training').map((item: any, index: number) => (
+                                        <ExperienceCard key={item.id} item={item} index={index} />
+                                    ))}
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    )}
                 </div>
 
             </div>
