@@ -61,6 +61,16 @@ Open `http://localhost:3000` in your browser.
 
 ---
 
+## 🌐 Deployment
+
+This project is pre-configured for zero-config deployment on **[Vercel](https://vercel.com)**:
+
+1. Push this repository to GitHub.
+2. Import the repository on [Vercel Dashboard](https://vercel.com/new).
+3. Keep default settings and click **Deploy**. Vercel will automatically serve the site using [`vercel.json`](./vercel.json).
+
+---
+
 ## 📬 Contact & Socials
 
 - **GitHub**: [@briandicky09](https://github.com/briandicky09)

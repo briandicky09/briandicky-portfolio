@@ -7,7 +7,7 @@
     "dev": "live-server --port=3000 --open=/",
     "start": "live-server --port=3000 --open=/",
     "serve": "live-server",
-    "build": "echo \"Website statis siap dideploy! Tidak memerlukan proses compile/bundling.\""
+    "build": "echo 'Static build ready'"
   },
   "devDependencies": {
     "live-server": "^1.2.2"
