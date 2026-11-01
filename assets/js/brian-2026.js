@@ -2406,6 +2406,7 @@ void main() {
     canvas.style.display = 'block';
     canvas.style.width = '100%';
     canvas.style.height = '100%';
+    canvas.style.touchAction = 'pan-y';
     canvas.setAttribute('aria-hidden', 'true');
     container.prepend(canvas);
 
@@ -3319,6 +3320,11 @@ void main() {
         if (!pointer.dragging) {
           if (pointer.touch && Math.abs(dy) > slop && Math.abs(dy) > Math.abs(dx)) {
             pointer.down = false;
+            try {
+              if (container.hasPointerCapture && container.hasPointerCapture(e.pointerId)) {
+                container.releasePointerCapture(e.pointerId);
+              }
+            } catch {}
             return;
           }
           if (Math.abs(dx) > slop) {
@@ -3346,6 +3352,11 @@ void main() {
     };
 
     const onPointerUp = e => {
+      try {
+        if (e && e.pointerId !== undefined && container.hasPointerCapture && container.hasPointerCapture(e.pointerId)) {
+          container.releasePointerCapture(e.pointerId);
+        }
+      } catch {}
       if (!pointer.down || e.pointerId !== pointer.id) return;
       pointer.down = false;
       container.removeAttribute('data-dragging');
@@ -3390,7 +3401,12 @@ void main() {
       start();
     };
 
-    const onPointerCancel = () => {
+    const onPointerCancel = e => {
+      try {
+        if (e && e.pointerId !== undefined && container.hasPointerCapture && container.hasPointerCapture(e.pointerId)) {
+          container.releasePointerCapture(e.pointerId);
+        }
+      } catch {}
       pointer.down = false;
       pointer.dragging = false;
       container.removeAttribute('data-dragging');
