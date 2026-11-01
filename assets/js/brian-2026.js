@@ -2017,8 +2017,7 @@ void main() {
       { selector: '#qualifications > .grid > div:last-child', distance: 100, duration: 0.8, stagger: 0.1, threshold: 0.1 },
       { selector: '#contact-heading', distance: 80, duration: 0.8, threshold: 0.1 },
       { selector: '#contact > .grid', distance: 100, duration: 0.8, stagger: 0.12, threshold: 0.1 },
-      { selector: 'footer[role="contentinfo"] > div:nth-of-type(2)', distance: 60, duration: 0.8, stagger: 0.08, threshold: 0.1 },
-      { selector: 'footer[role="contentinfo"] > div:nth-of-type(3)', distance: 80, duration: 0.9, threshold: 0.05 }
+      { selector: 'footer[role="contentinfo"] > div:nth-of-type(2)', distance: 60, duration: 0.8, stagger: 0.08, threshold: 0.1 }
     ];
 
     autoTargets.forEach((cfg) => {
