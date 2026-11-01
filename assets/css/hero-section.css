@@ -1,0 +1,211 @@
+/* loader styles ------------------------------------------------------------------------------------------ */
+
+.hero-section .loader div {
+  animation: loaderDiv 1s ease-in-out;
+}
+
+@keyframes loaderDiv {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+    filter: blur(3px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.hero-section .loader,
+.hero-section .loader div {
+  overflow: hidden;
+}
+
+.hero-section .loader {
+  font-family: "Paytone One", system-ui !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(40px);
+  background: #121212c0;
+  z-index: 1;
+  transition: all 0.4s ease-in-out;
+  transition-delay: 1s;
+}
+
+.hero-section .loader-progress {
+  font-family: "Paytone One", system-ui !important;
+  margin-left: 1rem;
+}
+
+/* main content styles ------------------------------------------------------------------------------------------ */
+
+.hero-section .scrolling-gallery li img {
+  width: 100%;
+  height: auto;
+  background: #f0f0f0;
+}
+
+.hero-section .scrolling-gallery ul {
+  padding-left: 1rem;
+  list-style: none;
+}
+
+.hero-section .scrolling-gallery li {
+  flex-shrink: 0;
+  width: clamp(500px, 60vw, 800px);
+  padding-right: 1rem;
+}
+
+/* --------------- */
+
+.hero-section .main-content {
+  overflow: hidden;
+}
+
+.hero-section .wrapper {
+  display: flex;
+}
+
+.hero-section .scrolling-text {
+  margin-top: -2rem;
+}
+
+/* .hero-section .scrolling-text-2 {
+  pointer-events: none;
+} */
+
+.hero-section .scrolling-text .text {
+  font-family: 'Paytone One', system-ui !important;
+  font-size: clamp(8rem, 14vw, 16rem);
+  line-height: 1;
+  font-weight: 900;
+}
+
+/* --------------- */
+
+.hero-section .wrapper img {
+  filter: grayscale(0);
+  border-radius: 25px;
+  transition: filter 0.4s ease-in-out, scale 0.4s ease-in-out;
+}
+
+.hero-section .wrapper img:hover {
+  filter: grayscale(0.75);
+  scale: 1.01;
+}
+
+/* parallax styles ---------------------------------------------------------------------------------------- */
+
+.parallax {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  position: absolute;
+  pointer-events: none;
+  /* z-index: 1; */
+}
+
+.parallax-1 {
+  top: 0;
+}
+
+.parallax-1 .flair-cus {
+  margin: 25px 0 -25px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  will-change: transform;
+  filter: saturate(1.5);
+}
+
+.parallax-1 .item-1 {
+  top: 0;
+  left: 6%;
+  width: 140px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-1 .item-2 {
+  top: 15%;
+  right: 12%;
+  width: 85px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-1 .item-3 {
+  bottom: 12%;
+  left: 23%;
+  width: 100px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-1 .item-4 {
+  bottom: 25%;
+  right: 34%;
+  width: 170px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-1 .item-1,
+.parallax-1 .item-4 {
+  z-index: 1;
+}
+
+/* -------------------- */
+
+.parallax-2 {
+  bottom: 0;
+}
+
+.parallax-2 .flair-cus {
+  margin: 25px 0 -25px 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  will-change: transform;
+  filter: saturate(1.5);
+}
+
+.parallax-2 .item-1 {
+  top: 0;
+  left: 6%;
+  width: 140px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-2 .item-2 {
+  top: 15%;
+  right: 12%;
+  width: 85px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-2 .item-3 {
+  bottom: 12%;
+  left: 23%;
+  width: 100px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-2 .item-4 {
+  bottom: 25%;
+  right: 34%;
+  width: 170px;
+  aspect-ratio: 1/1;
+  position: absolute;
+}
+
+.parallax-2 .item-1,
+.parallax-2 .item-4 {
+  z-index: 1;
+}

@@ -1,0 +1,11 @@
+# Local runtime config holding API keys (do NOT commit)
+config.json
+
+# OS/editor junk
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Node dependencies
+node_modules/
+package-lock.json

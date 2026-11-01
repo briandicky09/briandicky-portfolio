@@ -1,0 +1,15 @@
+{
+  "name": "brian-portfolio",
+  "version": "1.0.0",
+  "description": "Brian Dicky Vanka Andaraneva - Personal Developer Portfolio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/",
+    "start": "live-server --port=3000 --open=/",
+    "serve": "live-server",
+    "build": "echo \"Website statis siap dideploy! Tidak memerlukan proses compile/bundling.\""
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

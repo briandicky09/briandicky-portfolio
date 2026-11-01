@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" class="dark lenis lenis-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vehicle Tax — Brian Dicky Vanka Andaraneva</title>
+  <meta name="description" content="A cross-implementation desktop application suite engineered in Java Swing and C++ Qt Widgets, automating Indonesian PKB and SWDKLLJ vehicle tax calculations with persistent owner and transaction registries." />
+  <link rel="icon" type="image/png" href="/assets/images/profile-new.png" />
+  <link rel="stylesheet" href="/assets/css/brian-2026.css" />
+</head>
+<body class="geist_className antialiased">
+  <!-- Header -->
+  <header role="banner" class="w-full flex fixed top-0 bg-background items-center justify-between px-5 md:px-8 lg:px-10 py-5 md:relative z-50" aria-label="Site navigation">
+    <div class="flex items-center gap-6 md:gap-16 lg:gap-25">
+      <a class="text-base font-medium text-foreground hover:opacity-70 transition-opacity font-display z-50 relative" aria-label="brian" href="/">brian</a>
+      <nav aria-label="Primary navigation" class="hidden md:block">
+        <ul class="flex items-center gap-8" role="list">
+          <li>
+            <a class="text-base font-normal transition-opacity duration-300 opacity-50 hover:opacity-100" href="/#about">about</a>
+          </li>
+          <li>
+            <a class="text-base font-normal transition-opacity duration-300 opacity-50 hover:opacity-100" href="/#work">work</a>
+          </li>
+          <li>
+            <a class="text-base font-normal transition-opacity duration-300 opacity-50 hover:opacity-100" href="/#experience">experience</a>
+          </li>
+                    <li>
+            <a class="text-base font-normal transition-opacity duration-300 opacity-50 hover:opacity-100" href="/#qualifications">stack</a>
+          </li>
+          <li>
+            <a class="text-base font-normal transition-opacity duration-300 opacity-100 hover:opacity-100" href="/#contact">
+              <span class="shiny-text font-medium" data-shiny-text="contact" data-shiny-color="#b5b5b5" data-shiny-shine="#ffffff" data-shiny-speed="2" data-shiny-width="40" data-shiny-softness="0.8" data-shiny-trigger="loop">contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4 z-50 relative">
+      <button id="theme-toggle" type="button" class="group relative flex items-center p-1.5 justify-center cursor-pointer rounded-full bg-[#0e0e0e] text-[#f9f9f9]/70 hover:text-[#f9f9f9] transition-all border border-border" aria-label="Toggle color theme">
+        <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 12C16 14.2091 14.2091 16 12 16C9.7909 16 8 14.2091 8 12C8 9.7909 9.7909 8 12 8C14.2091 8 16 9.7909 16 12ZM12 2C12 2.6667 12 3.3333 12 4M12 20C12 20.6667 12 21.3333 12 22M4.93 4.93C5.4 5.4 5.87 5.87 6.34 6.34M17.66 17.66C18.13 18.13 18.6 18.6 19.07 19.07M2 12C2.6667 12 3.3333 12 4 12M20 12C20.6667 12 21.3333 12 22 12M6.34 17.66C5.87 18.13 5.4 18.6 4.93 19.07M19.07 4.93C18.6 5.4 18.13 5.87 17.66 6.34"></path>
+        </svg>
+        <svg id="theme-icon-moon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+        </svg>
+        <span class="sr-only">Switch theme</span>
+      </button>
+      <button id="mobile-menu-btn" class="md:hidden p-2 -mr-2 text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md" aria-expanded="false" aria-label="Open navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 5C9.3333 5 14.6667 5 20 5M4 12C9.3333 12 14.6667 12 20 12M4 19C9.3333 19 14.6667 19 20 19"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu-drawer" class="md:hidden fixed inset-0 h-[100dvh] w-full bg-background/90 backdrop-blur-lg z-40 transition-transform duration-500 ease-in-out translate-x-full" aria-hidden="true">
+      <nav class="flex flex-col items-center justify-center h-full">
+        <ul class="flex flex-col items-center w-full max-w-xs px-6" role="list">
+          <li class="w-full flex flex-col items-center">
+            <a class="mobile-nav-link text-lg font-sans transition-opacity duration-300 block py-1 opacity-60 hover:opacity-100" href="/#about">about</a>
+          </li>
+          <li class="w-full flex flex-col items-center">
+            <div aria-hidden="true" class="w-full h-px bg-gradient-to-r from-transparent via-border dark:via-foreground/20 to-transparent my-4"></div>
+            <a class="mobile-nav-link text-lg font-sans transition-opacity duration-300 block py-1 opacity-60 hover:opacity-100" href="/#work">work</a>
+          </li>
+          <li class="w-full flex flex-col items-center">
+            <div aria-hidden="true" class="w-full h-px bg-gradient-to-r from-transparent via-border dark:via-foreground/20 to-transparent my-4"></div>
+            <a class="mobile-nav-link text-lg font-sans transition-opacity duration-300 block py-1 opacity-60 hover:opacity-100" href="/#experience">experience</a>
+          </li>
+                    <li class="w-full flex flex-col items-center">
+            <div aria-hidden="true" class="w-full h-px bg-gradient-to-r from-transparent via-border dark:via-foreground/20 to-transparent my-4"></div>
+            <a class="mobile-nav-link text-lg font-sans transition-opacity duration-300 block py-1 opacity-60 hover:opacity-100" href="/#qualifications">stack</a>
+          </li>
+          <li class="w-full flex flex-col items-center">
+            <div aria-hidden="true" class="w-full h-px bg-gradient-to-r from-transparent via-border dark:via-foreground/20 to-transparent my-4"></div>
+            <a class="mobile-nav-link text-lg font-sans transition-opacity duration-300 block py-1 opacity-100 hover:opacity-100" href="/#contact"><span class="shiny-text font-medium" data-shiny-text="contact" data-shiny-color="#b5b5b5" data-shiny-shine="#ffffff" data-shiny-speed="2" data-shiny-width="40" data-shiny-softness="0.8" data-shiny-trigger="loop">contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="flex flex-col min-h-screen">
+    <div class="relative">
+      <section aria-label="Project hero" class="page-gutter section-padding mt-12 md:mt-0">
+        <div class="flex justify-end items-center gap-2 md:gap-3 max-w-7xl mx-auto mb-8 md:mb-3 md:pr-25 xl:pr-27 anim-project-actions">
+          <button id="share-project-btn" type="button" class="inline-flex items-center justify-center w-9 h-9 md:w-10 md:h-10 bg-surface rounded-full text-muted-foreground hover:text-foreground hover:bg-surface/80 transition-all duration-300 pointer-events-auto cursor-pointer" aria-label="Share project">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-share2 lucide-share-2 w-4 h-4" aria-hidden="true">
+              <circle cx="18" cy="5" r="3"></circle>
+              <circle cx="6" cy="12" r="3"></circle>
+              <circle cx="18" cy="19" r="3"></circle>
+              <line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
+              <line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+            </svg>
+          </button>
+          <a href="https://github.com/briandicky09/vehicle-tax-calculator" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-2 px-4 md:px-5 py-2 md:py-2.5 bg-foreground rounded-full text-sm font-medium text-background hover:opacity-90 transition-opacity duration-300 pointer-events-auto cursor-pointer">
+            <span class="font-sans">View Project</span>
+            <div class="inline-flex items-center justify-center text-background shrink-0">
+              <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path d="M7 7H17"></path>
+                  <path d="M17 7V17"></path>
+                  <path d="M7 17L17 7"></path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+
+        <div class="relative flex justify-center items-center gap-3 md:gap-6 lg:gap-9 w-full max-w-7xl mx-auto anim-project-hero" aria-label="Project image carousel">
+          <button id="carousel-prev" type="button" aria-label="Previous image" class="shrink-0 w-9 h-9 md:w-12 md:h-12 cursor-pointer rounded-full border border-border/40 bg-surface flex items-center justify-center text-foreground hover:bg-surface transition-colors duration-300 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left text-muted-foreground group-hover:text-foreground transition-colors duration-300 md:hidden" aria-hidden="true">
+              <path d="m15 18-6-6 6-6"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left text-muted-foreground group-hover:text-foreground transition-colors duration-300 hidden md:block" aria-hidden="true">
+              <path d="m15 18-6-6 6-6"></path>
+            </svg>
+          </button>
+
+          <div class="relative flex-1 overflow-hidden">
+            <div class="overflow-hidden">
+              <div id="carousel-track" class="flex transition-transform duration-500 ease-out" style="transform:translate3d(0%, 0, 0)">
+                <div class="min-w-0 shrink-0 grow-0 basis-full" role="group" aria-roledescription="slide">
+                  <div class="relative aspect-video w-full overflow-hidden">
+                    <div class="relative overflow-hidden w-full h-full rounded-card md:rounded-4xl border border-border/40 bg-surface">
+                      <img alt="Vehicle Tax Showcase Cover" src="/assets/images/project-previews/vehicle-tax-cover-landscape.png?v=5" class="object-cover select-none rounded-card md:rounded-4xl w-full h-full" style="position:absolute;height:100%;width:100%;left:0;top:0;object-position:center" />
+                    </div>
+                  </div>
+                </div>
+                <div class="min-w-0 shrink-0 grow-0 basis-full" role="group" aria-roledescription="slide">
+                  <div class="relative aspect-video w-full overflow-hidden">
+                    <div class="relative overflow-hidden w-full h-full rounded-card md:rounded-4xl border border-border/40 bg-surface">
+                      <img alt="Vehicle Tax Website Preview" src="/assets/images/project-previews/vehicle-tax-preview.png?v=5" class="object-cover select-none rounded-card md:rounded-4xl w-full h-full" style="position:absolute;height:100%;width:100%;left:0;top:0;object-position:top center" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-1.5 z-10" role="tablist" aria-label="Carousel slides">
+              <button type="button" role="tab" data-slide-to="0" aria-selected="true" aria-label="Go to slide 1" class="carousel-dot h-1.5 rounded-full transition-all duration-300 w-6 bg-foreground cursor-pointer"></button>
+              <button type="button" role="tab" data-slide-to="1" aria-selected="false" aria-label="Go to slide 2" class="carousel-dot h-1.5 rounded-full transition-all duration-300 w-1.5 bg-foreground/40 hover:bg-foreground/60 cursor-pointer"></button>
+            </div>
+          </div>
+
+          <button id="carousel-next" type="button" aria-label="Next image" class="shrink-0 w-9 h-9 md:w-12 md:h-12 cursor-pointer rounded-full border border-border/40 bg-surface flex items-center justify-center text-foreground hover:bg-surface transition-colors duration-300 group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right text-muted-foreground group-hover:text-foreground transition-colors duration-300 md:hidden" aria-hidden="true">
+              <path d="m9 18 6-6-6-6"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right text-muted-foreground group-hover:text-foreground transition-colors duration-300 hidden md:block" aria-hidden="true">
+              <path d="m9 18 6-6-6-6"></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <div class="bottom-0 z-20 pointer-events-none mb-5 bg-linear-to-t from-background via-background/80 to-transparent anim-project-title">
+        <section aria-label="Project Header" class="page-gutter flex items-end justify-between gap-4 pointer-events-auto">
+          <h1 class="text-[clamp(2.5rem,5vw,5.5rem)] leading-[1.05] font-display text-foreground">Vehicle Tax</h1>
+          <span class="text-xs md:text-base font-sans text-foreground tabular-nums shrink-0 pb-1 md:pb-2">2026</span>
+        </section>
+      </div>
+    </div>
+
+    <section aria-labelledby="overview-heading" class="page-gutter section-padding pt-8! flex items-center min-h-[50vh] anim-project-overview">
+      <div class="grid grid-cols-1 md:grid-cols-[5fr_2fr] gap-12 md:gap-20" data-animated-content data-distance="70" data-duration="0.8" data-stagger="0.1" data-threshold="0.1">
+        <div class="flex flex-col gap-6 md:gap-10">
+          <p id="overview-heading" class="text-base md:text-base font-sans font-medium text-foreground underline underline-offset-2 decoration-1 decoration-muted-foreground leading-relaxed max-w-[90%]">A cross-implementation desktop application suite engineered in Java Swing and C++ Qt Widgets, automating Indonesian PKB and SWDKLLJ vehicle tax calculations with persistent owner and transaction registries.</p>
+          <div class="space-y-6 md:space-y-7 text-base md:text-base text-muted-foreground md:leading-relaxed max-w-[90%]">
+            <p>Sistem Perhitungan Pajak Kendaraan Bermotor is a desktop administration application designed to standardize vehicle tax assessment and taxpayer record management with precision and speed.</p>
+            <p>The system automates Indonesian PKB (Pajak Kendaraan Bermotor) and SWDKLLJ computations based on vehicle category, engine displacement, manufacture year, progressive ownership tiers, and late-payment penalty rules.</p>
+            <p>I implemented the application across both Java (Swing GUI) and C++ (Qt Creator / Qt Widgets) using strict Object-Oriented Programming principles—encapsulation, inheritance, and polymorphism—complete with search, edit, delete, and persistent file storage workflows.</p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-8">
+          <div class="flex flex-col gap-1.5">
+            <span class="text-sm md:text-base font-sans font-medium text-muted-foreground ps-2">Tech</span>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-4 py-2 bg-surface border border-border/40 rounded-full text-sm font-sans text-foreground">Java</span>
+              <span class="px-4 py-2 bg-surface border border-border/40 rounded-full text-sm font-sans text-foreground">Java Swing</span>
+              <span class="px-4 py-2 bg-surface border border-border/40 rounded-full text-sm font-sans text-foreground">C++</span>
+              <span class="px-4 py-2 bg-surface border border-border/40 rounded-full text-sm font-sans text-foreground">Qt Creator</span>
+              <span class="px-4 py-2 bg-surface border border-border/40 rounded-full text-sm font-sans text-foreground">Qt Widgets</span>
+              <span class="px-4 py-2 bg-surface border border-border/40 rounded-full text-sm font-sans text-foreground">OOP Architecture</span>
+              <span class="px-4 py-2 bg-surface border border-border/40 rounded-full text-sm font-sans text-foreground">File Persistence</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 gap-y-6 gap-x-4">
+            <div class="flex flex-col gap-1.5 ps-2">
+              <span class="text-sm md:text-base font-sans font-medium text-muted-foreground">Client</span>
+              <span class="text-base text-foreground">Tax Administration Suite</span>
+            </div>
+            <div class="flex flex-col gap-1.5 ps-2">
+              <span class="text-sm md:text-base font-sans font-medium text-muted-foreground">Role</span>
+              <span class="text-base text-foreground">Desktop Application Developer</span>
+            </div>
+            <div class="flex flex-col gap-1.5 ps-2">
+              <span class="text-sm md:text-base font-sans font-medium text-muted-foreground">Category</span>
+              <span class="text-base text-foreground">Desktop & OOP Application</span>
+            </div>
+            <div class="flex flex-col gap-1.5 ps-2">
+              <span class="text-sm md:text-base font-sans font-medium text-muted-foreground">Year</span>
+              <span class="text-base text-foreground">2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="challenge-heading" class="page-gutter section-padding flex items-center min-h-[50vh] anim-project-details">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 w-full" data-animated-content data-distance="70" data-duration="0.8" data-stagger="0.1" data-threshold="0.1">
+        <div class="bg-surface border border-border/40 rounded-card p-5 sm:p-6 md:p-10 flex flex-col gap-3 group">
+          <h2 id="challenge-heading" class="text-base md:text-base font-sans font-medium text-foreground">Challenge</h2>
+          <p class="text-base md:text-base text-muted-foreground md:leading-relaxed whitespace-pre-line">Manual calculation of progressive Indonesian PKB and SWDKLLJ vehicle taxes is prone to human error when handling varying vehicle classes, late penalties, and multi-owner transaction histories.</p>
+        </div>
+        <div class="bg-surface border border-border/40 rounded-card p-5 sm:p-6 md:p-10 flex flex-col gap-3 group">
+          <h2 class="text-base md:text-base font-sans font-medium text-foreground">Solution</h2>
+          <p class="text-base md:text-base text-muted-foreground md:leading-relaxed whitespace-pre-line">I engineered a clean object-oriented desktop application in Java Swing and C++ Qt Widgets that automates tax breakdown formulas, validates owner and vehicle inputs, and persists complete transaction histories.</p>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="project-cta-heading" class="page-gutter section-padding anim-project-details" data-animated-content data-distance="70" data-duration="0.8" data-threshold="0.1">
+      <div class="bg-surface border border-border/40 rounded-card p-8 sm:p-10 md:p-14 lg:p-16 flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-12">
+        <div class="flex flex-col gap-3 max-w-lg">
+          <h2 id="project-cta-heading" class="text-[clamp(1.6rem,3.5vw,3rem)] leading-[1.1] font-display text-foreground">Interested in something similar?</h2>
+          <p class="text-base text-muted-foreground md:leading-relaxed">Have a project in mind or want to know more about how this was built? Drop me a message, I&#x27;d love to connect.</p>
+        </div>
+        <div class="flex flex-col gap-3 w-full md:w-auto md:min-w-60 shrink-0">
+          <button id="copy-email-btn" type="button" class="group w-full rounded-[var(--radius-card)] p-5 sm:p-6 flex items-center justify-between transition-all duration-300 text-left cursor-pointer bg-background hover:bg-background/80 text-sm md:text-base" aria-label="Copy briandicky09@gmail.com">
+            <span id="copy-email-text" class="font-medium text-foreground group-hover:text-foreground transition-colors duration-300">briandicky09@gmail.com</span>
+            <div class="flex items-center justify-center w-5 h-5">
+              <div class="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-copy w-4 h-4" aria-hidden="true">
+                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                </svg>
+              </div>
+            </div>
+          </button>
+          <a href="mailto:briandicky09@gmail.com?subject=Re: Vehicle Tax" class="group w-full inline-flex items-center justify-between gap-3 px-5 py-4 bg-foreground rounded-card text-sm md:text-base font-medium text-background hover:opacity-90 transition-opacity duration-300 cursor-pointer" aria-label="Send email about Vehicle Tax">
+            <span class="font-sans">Ask me about this project</span>
+            <div class="inline-flex items-center justify-center text-background shrink-0">
+              <svg fill="none" height="15" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="15" xmlns="http://www.w3.org/2000/svg">
+                <g>
+                  <path d="M7 7H17"></path>
+                  <path d="M17 7V17"></path>
+                  <path d="M7 17L17 7"></path>
+                </g>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="w-full page-gutter mt-16 mx-auto h-px bg-linear-to-r from-transparent via-foreground to-transparent opacity-50"></div>
+
+    <nav aria-label="Project navigation" class="page-gutter" data-animated-content data-distance="50" data-duration="0.7" data-threshold="0.1">
+      <div class="flex items-center justify-between">
+        <a class="group flex flex-col gap-1.5 py-10 md:py-18 flex-1 max-w-max min-w-[25%] items-start text-left" href="/work/nalar/">
+          <div class="flex items-center gap-2 text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+            <div class="rotate-180">
+              <div>
+                <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 12h14"></path>
+                  <path d="m12 5 7 7-7 7"></path>
+                </svg>
+              </div>
+            </div>
+            <span class="text-[10px] md:text-xs text-muted-foreground font-sans tracking-wide uppercase">Previous Project</span>
+          </div>
+          <span class="text-lg sm:text-xl md:text-3xl font-display text-foreground/80 px-4 md:px-6 group-hover:text-foreground transition-all duration-300 underline decoration-1 underline-offset-3 decoration-foreground/0 group-hover:decoration-foreground/90">Nalar</span>
+        </a>
+        <div class="flex-1"></div>
+      </div>
+    </nav>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo" class="relative w-full overflow-hidden select-none bg-linear-to-t from-background to-surface/50 mt-20 md:mt-40" aria-label="Site footer">
+    <div class="w-full page-gutter mx-auto h-px bg-linear-to-r from-transparent via-border dark:via-foreground/20 to-transparent"></div>
+    <div class="relative z-10 pt-16 md:pt-20 page-gutter flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8 w-full" data-animated-content data-distance="50" data-duration="0.75" data-threshold="0.1">
+      <div class="flex flex-col sm:flex-row items-start gap-10 sm:gap-16 md:gap-24 w-full lg:w-auto">
+        <div class="flex flex-col gap-4 sm:gap-6 w-full sm:w-full lg:w-auto">
+          <h3 class="text-xs sm:text-sm font-sans font-medium sm:text-start md:text-center lg:text-start w-full sm:w-auto text-muted-foreground uppercase tracking-wider">Navigation</h3>
+          <ul class="flex sm:flex-col md:flex-row flex-wrap items-center sm:items-start lg:justify-start gap-x-6 gap-y-3">
+            <li><a class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit" href="/#about"><span class="relative pb-1 underline underline-offset-3">about</span></a></li>
+            <li><a class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit" href="/#work"><span class="relative pb-1 underline underline-offset-3">work</span></a></li>
+            <li><a class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit" href="/#experience"><span class="relative pb-1 underline underline-offset-3">experience</span></a></li>
+                        <li><a class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit" href="/#contact"><span class="relative pb-1 underline underline-offset-3">contact</span></a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4 sm:gap-6 w-full sm:w-full lg:w-auto">
+          <h3 class="text-xs sm:text-sm font-sans font-medium sm:text-start md:text-center lg:text-start w-full sm:w-auto text-muted-foreground uppercase tracking-wider">Socials</h3>
+          <ul class="flex sm:flex-col md:flex-row flex-wrap items-center sm:items-start lg:justify-start gap-x-6 gap-y-3">
+            <li><a href="https://github.com/briandicky09" target="_blank" rel="noopener noreferrer" class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit"><span class="relative pb-1 underline underline-offset-3">github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/briandicky/" target="_blank" rel="noopener noreferrer" class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit"><span class="relative pb-1 underline underline-offset-3">linkedin</span></a></li>
+            <li><a href="mailto:briandicky09@gmail.com" class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit"><span class="relative pb-1 underline underline-offset-3">email</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col lg:items-end text-center lg:text-right w-full lg:w-auto pt-8 sm:pt-10 md:pt-12 lg:pt-0">
+        <p class="text-xs sm:text-sm font-sans font-medium text-muted-foreground uppercase tracking-wider leading-relaxed">
+          © 2026 | Designed &amp; Developed by <a href="mailto:briandicky09@gmail.com" class="text-foreground/80 hover:text-foreground underline underline-offset-3 transition-colors">brian</a>
+        </p>
+      </div>
+    </div>
+    <div class="relative z-10 w-full mt-12 sm:mt-15 md:mt-18 lg:mt-20 flex items-end justify-center overflow-hidden lg:pt-20" data-animated-content data-distance="90" data-duration="1" data-ease="power3.out" data-threshold="0.05">
+      <p class="text-[14.5vw] font-light tracking-tight text-muted-foreground/20 uppercase text-center opacity-90 font-display select-none pointer-events-none footer-massive-text" aria-label="ANDARANEVA — portfolio footer" style="font-family: 'brianFont', var(--font-brian), sans-serif; font-size: 14vw; line-height: 0.8; transform: translateY(12%);">ANDARANEVA</p>
+    </div>
+  </footer>
+
+  <script src="/assets/js/lenis.min.js"></script>
+  <script src="/assets/js/gsap.min.js"></script>
+  <script src="/assets/js/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/brian-2026.js"></script>
+</body>
+</html>

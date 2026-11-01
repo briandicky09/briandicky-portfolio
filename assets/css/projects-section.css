@@ -1,0 +1,261 @@
+.projects-section {
+    width: 100%;
+    position: relative;
+}
+
+.gx-tilted-cards-wrapper {
+    display: flex;
+    width: 100%;
+    padding: 25px 0 15px 0;
+    justify-content: space-evenly;
+}
+
+.gx-tilted-card-container {
+    position: relative;
+    perspective: 800px;
+    padding: 0.75rem !important;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gx-tilted-card-inner {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 15px;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    will-change: transform;
+    cursor: pointer;
+}
+
+.gx-tilted-card-img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(0.8);
+    object-fit: cover;
+    transform: translateZ(0);
+    transition: filter 0.5s ease-in-out;
+}
+
+.gx-tilted-card-container:hover .gx-tilted-card-img {
+    filter: grayscale(0);
+}
+
+.gx-tilted-card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(30px);
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gx-tilted-card-overlay-text {
+    font-size: 14px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.gx-tilted-card-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transform: translateZ(30px);
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+
+.gx-tilted-card-link-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 10px;
+    margin: 5px;
+    font-size: 14px;
+    opacity: 0;
+    color: #000 !important;
+    text-decoration: none !important;
+    font-weight: 500;
+    text-transform: capitalize;
+    border-radius: 12px;
+    background-color: #fff;
+    border: 1.5px solid #ffffff00;
+    filter: blur(2px);
+    transition: opacity 0.4s ease, filter 0.2s ease;
+}
+
+.gx-tilted-card-link-text span {
+    margin-left: -14px;
+    opacity: 0;
+    padding-left: 6px;
+    transition: all 0.2s ease-in-out;
+}
+
+.gx-tilted-card-container:hover .gx-tilted-card-link-text {
+    opacity: 1;
+    filter: blur(0);
+    animation: live-border 2s linear infinite;
+}
+
+.gx-tilted-card-link-text:hover .link-text-arrow {
+    margin-left: 0px;
+    opacity: 1;
+}
+
+.gx-tilted-card-link-text:active .link-text-arrow {
+    padding-left: 3px;
+    transition: padding ease-in-out 0.2s;
+}
+
+.gx-tilted-card-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    padding: 4px 10px;
+    font-size: 10px;
+    color: #2d2d2d;
+    border-radius: 4px;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 3;
+}
+
+/* STAR Modal Styles (only visible when clicking a project) -------------------------------------------- */
+.brian-modal .modal-content {
+    background-color: #141414;
+    border: 1px solid #2e2e2e;
+    border-radius: 24px;
+    color: #ffffff;
+    font-family: "Poppins", system-ui !important;
+}
+
+.brian-modal .modal-header {
+    border-bottom: 1px solid #252525;
+    padding: 1.25rem 1.75rem;
+}
+
+.brian-modal .modal-title {
+    font-family: "Paytone One", system-ui !important;
+    font-size: 1.6rem;
+}
+
+.brian-modal .modal-body {
+    padding: 1.5rem 1.75rem;
+}
+
+.brian-modal .modal-footer {
+    border-top: 1px solid #252525;
+    padding: 1rem 1.75rem;
+}
+
+.star-modal-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin-top: 1rem;
+}
+
+.star-modal-item {
+    background-color: #1a1a1a;
+    border: 1px solid #252525;
+    border-radius: 16px;
+    padding: 0.85rem 1.1rem;
+}
+
+.star-modal-label {
+    font-weight: 700;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #ff8709;
+    margin-bottom: 0.2rem;
+    display: block;
+}
+
+.star-modal-text {
+    font-size: 0.88rem;
+    color: #dedede;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.brian-tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+}
+
+.brian-tag {
+    font-family: "Poppins", system-ui !important;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #e0e0e0;
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50px;
+    padding: 0.25rem 0.75rem;
+}
+
+.gx-star-toggle-btn {
+    background: #fff;
+    color: #000 !important;
+    border: none;
+    border-radius: 12px;
+    padding: 6px 14px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.gx-repo-btn {
+    background: #1a1a1a;
+    color: #fff !important;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 6px 14px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    text-decoration: none !important;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+@keyframes live-border {
+    0% {
+        border: 2px solid #ffffff00;
+    }
+
+    30% {
+        border: 2px solid #111111;
+    }
+
+    60% {
+        border: 2px solid #111111;
+    }
+
+    100% {
+        border: 2px solid #ffffff00;
+    }
+}

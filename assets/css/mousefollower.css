@@ -1,0 +1,96 @@
+/* custom default cursor */
+.mouse-follower-sp {
+  --border-color: #fff;
+  --text-color: #fff;
+  --bg-color: #000;
+
+  top: 0;
+  left: 0;
+  position: fixed;
+  scale: 1;
+  padding: 0 5px;
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-color);
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: var(--bg-color);
+  will-change: transform;
+  pointer-events: none;
+}
+
+/* custom default cursor */
+.mouse-follower-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  scale: 1;
+  height: 20px;
+  opacity: 0;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  backdrop-filter: invert(1);
+  background-color: #ffffff4e;
+  will-change: transform;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* cursor when hovering gallery */
+.mouse-follower-2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  scale: 0.5;
+  width: 100px;
+  aspect-ratio: 1/1;
+  background-image: url("https://assets.codepen.io/16327/flair-36.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  will-change: transform;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* cursor when hovering first title */
+.mouse-follower-3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  scale: 0.5;
+  width: 120px;
+  aspect-ratio: 1/1;
+  background-image: url("https://assets.codepen.io/16327/flair-4.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  will-change: transform;
+  pointer-events: none;
+}
+
+/* cursor when hovering logo */
+.mouse-follower-4 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  scale: 0.5;
+  width: 100px;
+  aspect-ratio: 1/1;
+  background-image: url("https://assets.codepen.io/16327/flair-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  will-change: transform;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.op--0 {
+  opacity: 0;
+}
+
+.m--hovered {
+  height: 30px;
+}

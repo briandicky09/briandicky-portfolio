@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en" class="dark lenis lenis-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brian Dicky Vanka Andaraneva — Fullstack Web Developer</title>
+  <meta name="description" content="Portfolio of Brian Dicky Vanka Andaraneva, a Fullstack Web Developer based in Sidoarjo, East Java, specializing in Laravel, React, Next.js, TypeScript, Tailwind CSS, and AI integration." />
+  <link rel="icon" type="image/png" href="assets/images/profile-new.png" />
+  <link rel="stylesheet" href="assets/css/brian-2026.css?v=7" />
+</head>
+<body class="geist_className antialiased">
+  <!-- Header -->
+  <header role="banner" class="w-full flex fixed top-0 bg-background items-center justify-between px-5 md:px-8 lg:px-10 py-5 md:relative z-50" aria-label="Site navigation">
+    <div class="flex items-center gap-6 md:gap-16 lg:gap-25">
+      <a class="text-base font-medium text-foreground hover:opacity-70 transition-opacity font-display z-50 relative" aria-label="brian" href="#hero">brian</a>
+      <nav aria-label="Primary navigation" class="hidden md:block">
+        <ul class="flex items-center gap-8" role="list">
+          <li>
+            <a class="text-base font-normal transition-opacity duration-300 opacity-50 hover:opacity-100" href="#about">about</a>
+          </li>
+          <li>
+            <a class="text-base font-normal transition-opacity duration-300 opacity-50 hover:opacity-100" href="#work">work</a>
+          </li>
+          <li>
+            <a class="text-base font-normal transition-opacity duration-300 opacity-50 hover:opacity-100" href="#experience">experience</a>
+          </li>
+          <li>
+            <a class="text-base font-normal transition-opacity duration-300 opacity-50 hover:opacity-100" href="#qualifications">stack</a>
+          </li>
+          <li>
+            <a class="text-base font-normal transition-opacity duration-300 opacity-100 hover:opacity-100" href="#contact">
+              <span class="shiny-text font-medium" data-shiny-text="contact" data-shiny-color="#b5b5b5" data-shiny-shine="#ffffff" data-shiny-speed="2" data-shiny-width="40" data-shiny-softness="0.8" data-shiny-trigger="loop">contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="flex items-center gap-4 z-50 relative">
+      <button id="theme-toggle" type="button" class="group relative flex items-center p-1.5 justify-center cursor-pointer rounded-full bg-[#0e0e0e] text-[#f9f9f9]/70 hover:text-[#f9f9f9] transition-all border border-border" aria-label="Toggle color theme">
+        <svg id="theme-icon-sun" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M16 12C16 14.2091 14.2091 16 12 16C9.7909 16 8 14.2091 8 12C8 9.7909 9.7909 8 12 8C14.2091 8 16 9.7909 16 12ZM12 2C12 2.6667 12 3.3333 12 4M12 20C12 20.6667 12 21.3333 12 22M4.93 4.93C5.4 5.4 5.87 5.87 6.34 6.34M17.66 17.66C18.13 18.13 18.6 18.6 19.07 19.07M2 12C2.6667 12 3.3333 12 4 12M20 12C20.6667 12 21.3333 12 22 12M6.34 17.66C5.87 18.13 5.4 18.6 4.93 19.07M19.07 4.93C18.6 5.4 18.13 5.87 17.66 6.34"></path>
+        </svg>
+        <svg id="theme-icon-moon" class="hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+        </svg>
+        <span class="sr-only">Switch theme</span>
+      </button>
+      <button id="mobile-menu-btn" class="md:hidden p-2 -mr-2 text-foreground focus:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-md" aria-expanded="false" aria-label="Open navigation menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M4 5C9.3333 5 14.6667 5 20 5M4 12C9.3333 12 14.6667 12 20 12M4 19C9.3333 19 14.6667 19 20 19"></path>
+        </svg>
+      </button>
+    </div>
+    <!-- Mobile Drawer -->
+    <div id="mobile-menu-drawer" class="md:hidden fixed inset-0 h-[100dvh] w-full bg-background/90 backdrop-blur-lg z-40 transition-transform duration-500 ease-in-out translate-x-full" aria-hidden="true">
+      <nav class="flex flex-col items-center justify-center h-full">
+        <ul class="flex flex-col items-center w-full max-w-xs px-6" role="list">
+          <li class="w-full flex flex-col items-center">
+            <a class="mobile-nav-link text-lg font-sans transition-opacity duration-300 block py-1 opacity-60 hover:opacity-100" href="#about">about</a>
+          </li>
+          <li class="w-full flex flex-col items-center">
+            <div aria-hidden="true" class="w-full h-px bg-gradient-to-r from-transparent via-border dark:via-foreground/20 to-transparent my-4"></div>
+            <a class="mobile-nav-link text-lg font-sans transition-opacity duration-300 block py-1 opacity-60 hover:opacity-100" href="#work">work</a>
+          </li>
+          <li class="w-full flex flex-col items-center">
+            <div aria-hidden="true" class="w-full h-px bg-gradient-to-r from-transparent via-border dark:via-foreground/20 to-transparent my-4"></div>
+            <a class="mobile-nav-link text-lg font-sans transition-opacity duration-300 block py-1 opacity-60 hover:opacity-100" href="#experience">experience</a>
+          </li>
+          <li class="w-full flex flex-col items-center">
+            <div aria-hidden="true" class="w-full h-px bg-gradient-to-r from-transparent via-border dark:via-foreground/20 to-transparent my-4"></div>
+            <a class="mobile-nav-link text-lg font-sans transition-opacity duration-300 block py-1 opacity-60 hover:opacity-100" href="#qualifications">stack</a>
+          </li>
+          <li class="w-full flex flex-col items-center">
+            <div aria-hidden="true" class="w-full h-px bg-gradient-to-r from-transparent via-border dark:via-foreground/20 to-transparent my-4"></div>
+            <a class="mobile-nav-link text-lg font-sans transition-opacity duration-300 block py-1 opacity-100 hover:opacity-100" href="#contact"><span class="shiny-text font-medium" data-shiny-text="contact" data-shiny-color="#b5b5b5" data-shiny-shine="#ffffff" data-shiny-speed="2" data-shiny-width="40" data-shiny-softness="0.8" data-shiny-trigger="loop">contact</span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="flex flex-col">
+    <!-- HERO SECTION -->
+    <section id="hero" aria-label="Hero" class="relative min-h-screen md:min-h-screen flex flex-col justify-end page-gutter section-padding pt-[clamp(2rem,21.5vh,14rem)]!">
+      <div class="flex justify-end" data-animated-content data-distance="60" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-trigger="mount">
+        <h1 class="text-[clamp(3rem,10vw,11rem)] leading-none tracking-tight text-foreground select-none font-display">brian<span class="sr-only"> Dicky Vanka Andaraneva</span></h1>
+        <p class="sr-only">Welcome to the portfolio of Brian Dicky Vanka Andaraneva, a Fullstack Web Developer focused on building modern, high-performance, and scalable web applications using PHP, Laravel, React, Next.js, TypeScript, Tailwind CSS, and MySQL.</p>
+      </div>
+
+      <div class="flex flex-col md:flex-row w-full gap-4 md:gap-6 lg:gap-8 mt-5" data-animated-content data-distance="80" data-direction="vertical" data-duration="0.85" data-delay="0.12" data-stagger="0.1" data-ease="power3.out" data-trigger="mount">
+        <!-- Left Hero Card (Profile) -->
+        <div class="relative w-full md:w-[44%] lg:w-[40%] xl:w-[38%] min-h-80 xs:min-h-87.5 sm:min-h-95 md:min-h-[48vh] lg:min-h-[50vh] rounded-card overflow-hidden bg-black" aria-label="Featured profile">
+          <div class="relative w-full h-full min-h-[inherit] flex flex-col justify-end p-4 xs:p-6 md:p-4 lg:p-6 group overflow-hidden">
+            <div id="hero-dither-bg" class="dither-container" data-wave-color="#bcbcbc" data-bg-color="#120f17" data-dither-mode="bayer" data-color-num="4" data-pixel-size="2" data-wave-speed="0.05" data-wave-frequency="3" data-wave-amplitude="0.3" data-mouse-effect="erase" data-mouse-radius="0.3">
+              <canvas class="dither-canvas" aria-hidden="true"></canvas>
+            </div>
+            <div class="absolute inset-0 bg-linear-to-t from-black/80 via-black/35 to-transparent pointer-events-none z-[2]"></div>
+            <div class="relative z-10 flex flex-col xs:flex-row xs:items-center gap-6 xs:gap-6 md:gap-4.5 lg:gap-6 xl:gap-8 my-auto xs:my-0 xs:mt-auto">
+              <div class="shrink-0 w-30 xs:w-34 md:w-30 lg:w-32 xl:w-34 2xl:w-36 aspect-square rounded-[18px] sm:rounded-card md:rounded-2xl lg:rounded-[18px] xl:rounded-[22px] p-px bg-linear-to-br from-white/30 to-white/5 overflow-hidden shadow-2xl backdrop-blur-sm">
+                <div class="relative w-full h-full rounded-2xl xs:rounded-[18px] md:rounded-[14px] lg:rounded-2xl xl:rounded-card overflow-hidden bg-linear-to-br from-white/80 to-black/70">
+                  <img alt="Brian Dicky Vanka Andaraneva" src="assets/images/profile-new.png?v=3" class="object-cover w-full h-full" style="position:absolute;height:100%;width:100%;left:0;top:0;object-position:center center" />
+                </div>
+              </div>
+              <div class="flex flex-col gap-2 xs:gap-4 md:gap-3 xl:gap-3 flex-1 ps-px sm:ps-0">
+                <span class="text-xs xs:text-sm xl:text-sm uppercase font-sans text-white/80">FULLSTACK DEV</span>
+                <p class="text-base md:text-base lg:text-base xl:text-base font-light font-sans text-white leading-snug md:leading-snug text-balance line-clamp-4">Building modern, high-performance, and scalable web applications with clean architecture and AI integration.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Interactive Card Stack -->
+        <div class="hidden md:block relative flex-1 md:min-h-[48vh] lg:min-h-[50vh] w-full overflow-hidden" aria-label="Portfolio interactive stack">
+          <div id="hero-card-stack" style="container-type:size" class="relative flex items-center justify-end w-full h-full">
+            <!-- Stack Card 0 -->
+            <div class="hero-stack-card absolute flex items-center justify-center rounded-card border-none border-foreground/20 [box-shadow:inset_50px_0px_50px_-10px_var(--color-foreground-10)] bg-surface p-2 will-change-transform h-full w-[calc(100%-80px)] max-w-[600px] transition-all duration-500 ease-out" data-index="0" style="top:50%;right:0px;z-index:3;opacity:1;filter:blur(0px);transform:translateX(calc(0cqw + 0%)) translateY(-50%)">
+              <div class="flex h-full w-full flex-col gap-3">
+                <div class="relative flex flex-1 min-h-0 w-full items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-muted/20">
+                  <img alt="PUSATKOS Preview" src="assets/images/project-previews/pusatkos-hero-wide.png?v=5" class="object-cover select-none w-full h-full" style="position:absolute;height:100%;width:100%;left:0;top:0;object-position:center" />
+                </div>
+                <div class="flex w-full items-center justify-between gap-2 px-3 pb-3">
+                  <div class="flex min-w-0 flex-1 flex-col">
+                    <span class="truncate text-foreground">Featured Work: PUSATKOS</span>
+                    <span class="text-foreground/50 font-light truncate">Multi-role boarding house discovery &amp; rental management platform built in Laravel 12 &amp; MySQL.</span>
+                  </div>
+                  <div class="flex shrink-0 items-center gap-2">
+                    <a href="/work/pusatkos/" class="group flex h-10 shrink-0 cursor-pointer select-none items-center gap-1 rounded-full bg-foreground pl-4 pr-3 text-sm font-medium text-background hover:opacity-90 pointer-events-auto">
+                      Read
+                      <div class="inline-flex items-center justify-center shrink-0">
+                        <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 7H17"></path><path d="M17 7V17"></path><path d="M7 17L17 7"></path></svg>
+                      </div>
+                    </a>
+                    <button type="button" class="hero-stack-next flex h-10 w-10 shrink-0 cursor-pointer select-none items-center justify-center rounded-full bg-foreground hover:opacity-90 text-background border border-border transition-colors pointer-events-auto" aria-label="Next card">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-5 h-5" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-card-overlay absolute inset-0 bg-linear-to-b from-background via-background/85 to-background/50 pointer-events-none rounded-[inherit] z-20 transition-opacity duration-500" style="opacity:0"></div>
+            </div>
+
+            <!-- Stack Card 1 -->
+            <div class="hero-stack-card absolute flex items-center justify-center rounded-card border-none border-foreground/20 [box-shadow:inset_50px_0px_50px_-10px_var(--color-foreground-10)] bg-surface p-2 will-change-transform h-full w-[calc(100%-80px)] max-w-[600px] transition-all duration-500 ease-out" data-index="1" style="top:50%;right:0px;z-index:2;opacity:1;filter:blur(0px);transform:translateX(calc(-50cqw + 50%)) translateY(-50%)">
+              <div class="flex h-full w-full flex-col gap-3">
+                <div class="relative flex flex-1 min-h-0 w-full items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-muted/20">
+                  <img alt="Tanggapin Preview" src="assets/images/project-previews/tanggapin-hero-wide.png?v=5" class="object-cover select-none w-full h-full" style="position:absolute;height:100%;width:100%;left:0;top:0;object-position:center" />
+                </div>
+                <div class="flex w-full items-center justify-between gap-2 px-3 pb-3">
+                  <div class="flex min-w-0 flex-1 flex-col">
+                    <span class="truncate text-foreground">Just Shipped: Tanggapin</span>
+                    <span class="text-foreground/50 font-light truncate">School operations &amp; early-warning student risk detection ecosystem with Laravel 13 &amp; React 19.</span>
+                  </div>
+                  <div class="flex shrink-0 items-center gap-2">
+                    <a href="/work/tanggapin/" class="group flex h-10 shrink-0 cursor-pointer select-none items-center gap-1 rounded-full bg-foreground pl-4 pr-3 text-sm font-medium text-background hover:opacity-90 pointer-events-auto">
+                      Read
+                      <div class="inline-flex items-center justify-center shrink-0">
+                        <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 7H17"></path><path d="M17 7V17"></path><path d="M7 17L17 7"></path></svg>
+                      </div>
+                    </a>
+                    <button type="button" class="hero-stack-next flex h-10 w-10 shrink-0 cursor-pointer select-none items-center justify-center rounded-full bg-foreground hover:opacity-90 text-background border border-border transition-colors pointer-events-auto" aria-label="Next card">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-5 h-5" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-card-overlay absolute inset-0 bg-linear-to-b from-background via-background/85 to-background/50 pointer-events-none rounded-[inherit] z-20 transition-opacity duration-500" style="opacity:0.35"></div>
+            </div>
+
+            <!-- Stack Card 2 -->
+            <div class="hero-stack-card absolute flex items-center justify-center rounded-card border-none border-foreground/20 [box-shadow:inset_50px_0px_50px_-10px_var(--color-foreground-10)] bg-surface p-2 will-change-transform h-full w-[calc(100%-80px)] max-w-[600px] transition-all duration-500 ease-out" data-index="2" style="top:50%;right:0px;z-index:1;opacity:1;filter:blur(0px);transform:translateX(calc(-100cqw + 100%)) translateY(-50%)">
+              <div class="flex h-full w-full flex-col gap-3">
+                <div class="relative flex flex-1 min-h-0 w-full items-center justify-center overflow-hidden rounded-xl border border-border/50 bg-muted/20">
+                  <img alt="OLARA Preview" src="assets/images/project-previews/olara-hero-wide.png?v=5" class="object-cover select-none w-full h-full" style="position:absolute;height:100%;width:100%;left:0;top:0;object-position:center" />
+                </div>
+                <div class="flex w-full items-center justify-between gap-2 px-3 pb-3">
+                  <div class="flex min-w-0 flex-1 flex-col">
+                    <span class="truncate text-foreground">Featured Project: OLARA</span>
+                    <span class="text-foreground/50 font-light truncate">Smart circular waste management &amp; AI eco-wellness platform with Laravel 13 &amp; Midtrans Snap.</span>
+                  </div>
+                  <div class="flex shrink-0 items-center gap-2">
+                    <a href="/work/olara/" class="group flex h-10 shrink-0 cursor-pointer select-none items-center gap-1 rounded-full bg-foreground pl-4 pr-3 text-sm font-medium text-background hover:opacity-90 pointer-events-auto">
+                      Read
+                      <div class="inline-flex items-center justify-center shrink-0">
+                        <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M7 7H17"></path><path d="M17 7V17"></path><path d="M7 17L17 7"></path></svg>
+                      </div>
+                    </a>
+                    <button type="button" class="hero-stack-next flex h-10 w-10 shrink-0 cursor-pointer select-none items-center justify-center rounded-full bg-foreground hover:opacity-90 text-background border border-border transition-colors pointer-events-auto" aria-label="Next card">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-5 h-5" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="stack-card-overlay absolute inset-0 bg-linear-to-b from-background via-background/85 to-background/50 pointer-events-none rounded-[inherit] z-20 transition-opacity duration-500" style="opacity:0.45"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" aria-label="About" class="relative min-h-[70vh] md:min-h-[88vh] section-padding page-gutter flex flex-col items-center justify-center overflow-hidden">
+      <svg aria-hidden="true" class="pointer-events-none absolute inset-0 z-10 h-full w-full stroke-[0.5] mask-[radial-gradient(circle,black_0%,transparent_100%),linear-gradient(0deg,black_60%,transparent_100%),linear-gradient(180deg,black_60%,transparent_100%)] mask-intersect opacity-50 text-foreground" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="_R_ianqdb_" width="10" height="10" patternUnits="userSpaceOnUse">
+            <line x1="0" y1="10" x2="10" y2="0" stroke="currentColor"></line>
+            <line x1="-10" y1="10" x2="0" y2="0" stroke="currentColor"></line>
+            <line x1="10" y1="10" x2="20" y2="0" stroke="currentColor"></line>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#_R_ianqdb_)"></rect>
+      </svg>
+
+      <div class="relative z-10 flex flex-col items-center gap-3 md:gap-6 lg:gap-7 text-center" data-animated-content data-distance="100" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-blur="0" data-stagger="0.08" data-threshold="0.1">
+        <h2 class="sr-only">About Me</h2>
+
+        <!-- Row 1 -->
+        <div class="flex items-center gap-3 flex-wrap justify-center">
+          <span class="text-[clamp(1.25rem,2.5vw,1.875rem)] font-medium leading-tight text-foreground tracking-tight font-display">Fullstack</span>
+          <div data-slot="avatar-group" style="display:flex;align-items:center" class="h-9 sm:h-11 -space-x-4 md:-space-x-5">
+            <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10 transition-transform duration-200" style="z-index:7">
+              <span class="avatar-tooltip">Laravel</span>
+              <div class="relative aspect-square h-full rounded-full overflow-hidden border-2 border-foreground shadow-md cursor-pointer bg-surface p-2">
+                <img alt="Laravel" src="assets/icons/stack/laravel.svg" class="object-contain w-full h-full" />
+              </div>
+            </div>
+            <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10 transition-transform duration-200" style="z-index:6">
+              <span class="avatar-tooltip">React</span>
+              <div class="relative aspect-square h-full rounded-full overflow-hidden border-2 border-foreground shadow-md cursor-pointer bg-surface p-2">
+                <img alt="React" src="assets/icons/stack/react.svg" class="object-contain w-full h-full" />
+              </div>
+            </div>
+            <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10 transition-transform duration-200" style="z-index:5">
+              <span class="avatar-tooltip">Next.js</span>
+              <div class="relative aspect-square h-full rounded-full overflow-hidden border-2 border-foreground shadow-md cursor-pointer bg-surface p-2">
+                <img alt="Next.js" src="assets/icons/stack/nextjs.svg" class="object-contain w-full h-full" />
+              </div>
+            </div>
+            <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10 transition-transform duration-200" style="z-index:4">
+              <span class="avatar-tooltip">TypeScript</span>
+              <div class="relative aspect-square h-full rounded-full overflow-hidden border-2 border-foreground shadow-md cursor-pointer bg-surface p-2">
+                <img alt="TypeScript" src="assets/icons/stack/typescript.svg" class="object-contain w-full h-full" />
+              </div>
+            </div>
+            <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10 transition-transform duration-200" style="z-index:3">
+              <span class="avatar-tooltip">Tailwind CSS</span>
+              <div class="relative aspect-square h-full rounded-full overflow-hidden border-2 border-foreground shadow-md cursor-pointer bg-surface p-2">
+                <img alt="Tailwind CSS" src="assets/icons/stack/tailwindcss.svg" class="object-contain w-full h-full" />
+              </div>
+            </div>
+            <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10 transition-transform duration-200" style="z-index:2">
+              <span class="avatar-tooltip">MySQL</span>
+              <div class="relative aspect-square h-full rounded-full overflow-hidden border-2 border-foreground shadow-md cursor-pointer bg-surface p-2">
+                <img alt="MySQL" src="assets/icons/stack/mysql.svg" class="object-contain w-full h-full" />
+              </div>
+            </div>
+            <div class="relative h-full aspect-square shrink-0" style="z-index:0">
+              <a href="#qualifications" class="relative aspect-square w-full h-full rounded-full overflow-hidden bg-surface shadow-sm hover:z-10 cursor-pointer flex items-center justify-center text-xs md:text-sm font-medium text-foreground select-none bg-linear-to-b from-background to-foreground/30 border-2 border-foreground">+8</a>
+            </div>
+          </div>
+          <span class="text-[clamp(1.25rem,2.5vw,1.875rem)] font-medium leading-tight text-foreground tracking-tight font-display">&amp; Backend Engineer</span>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="flex items-center gap-3 flex-wrap justify-center">
+          <span class="text-[clamp(1.25rem,2.5vw,1.875rem)] font-medium leading-tight text-foreground tracking-tight font-display">Building Scalable Systems</span>
+          <div class="flex items-center -space-x-4 md:-space-x-5">
+            <div class="relative" style="z-index:3">
+              <a title="PUSATKOS" target="_blank" rel="noopener noreferrer" class="block focus:outline-none rounded-full" href="https://github.com/briandicky09/PUSATKOS">
+                <div class="group relative overflow-hidden rounded-full inline-flex items-center justify-center bg-surface border-2 border-foreground text-foreground cursor-pointer h-10 sm:h-12 md:h-[3.25rem] px-5 sm:px-6 md:px-7 text-sm sm:text-[15px] md:text-base pe-2! ps-5!">
+                  <div class="relative z-10 flex items-center gap-1 text-sm sm:text-base font-medium tracking-tight whitespace-nowrap">
+                    <span class="truncate max-w-[21vw] sm:max-w-full">PUSATKOS</span>
+                    <div class="opacity-70 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pb-px">
+                      <div class="inline-flex items-center justify-center w-4 h-4 md:w-5 md:h-5">
+                        <svg fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M7 7H17"></path><path d="M17 7V17"></path><path d="M7 17L17 7"></path></svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="relative" style="z-index:2">
+              <a title="Tanggapin" target="_blank" rel="noopener noreferrer" class="block focus:outline-none rounded-full" href="https://github.com/briandicky09/tanggapin">
+                <div class="group relative overflow-hidden rounded-full inline-flex items-center justify-center bg-surface border-2 border-foreground text-foreground cursor-pointer h-10 sm:h-12 md:h-[3.25rem] px-5 sm:px-6 md:px-7 text-sm sm:text-[15px] md:text-base pe-2! ps-5!">
+                  <div class="relative z-10 flex items-center gap-1 text-sm sm:text-base font-medium tracking-tight whitespace-nowrap">
+                    <span class="truncate max-w-[21vw] sm:max-w-full">Tanggapin</span>
+                    <div class="opacity-70 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pb-px">
+                      <div class="inline-flex items-center justify-center w-4 h-4 md:w-5 md:h-5">
+                        <svg fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M7 7H17"></path><path d="M17 7V17"></path><path d="M7 17L17 7"></path></svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="relative" style="z-index:1">
+              <a title="OLARA" target="_blank" rel="noopener noreferrer" class="block focus:outline-none rounded-full" href="https://github.com/briandicky09/olara">
+                <div class="group relative overflow-hidden rounded-full inline-flex items-center justify-center bg-surface border-2 border-foreground text-foreground cursor-pointer h-10 sm:h-12 md:h-[3.25rem] px-5 sm:px-6 md:px-7 text-sm sm:text-[15px] md:text-base pe-2! ps-5!">
+                  <div class="relative z-10 flex items-center gap-1 text-sm sm:text-base font-medium tracking-tight whitespace-nowrap">
+                    <span class="truncate max-w-[21vw] sm:max-w-full">OLARA</span>
+                    <div class="opacity-70 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pb-px">
+                      <div class="inline-flex items-center justify-center w-4 h-4 md:w-5 md:h-5">
+                        <svg fill="none" height="100%" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="100%" xmlns="http://www.w3.org/2000/svg"><path d="M7 7H17"></path><path d="M17 7V17"></path><path d="M7 17L17 7"></path></svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="flex items-center gap-3 flex-wrap justify-center">
+          <span class="text-[clamp(1.25rem,2.5vw,1.875rem)] font-medium leading-tight text-foreground tracking-tight font-display">Through</span>
+          <div data-slot="avatar-group" style="display:flex;align-items:center" class="h-9 md:h-11 -space-x-4 md:-space-x-5">
+            <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10" style="z-index:4">
+              <span class="avatar-tooltip">GitHub</span>
+              <a target="_blank" rel="noopener noreferrer" class="block h-full aspect-square" href="https://github.com/briandicky09">
+                <div class="relative aspect-square h-full rounded-full overflow-hidden border-2 border-foreground shadow-md cursor-pointer bg-surface flex items-center justify-center p-2 text-foreground">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </div>
+              </a>
+            </div>
+            <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10" style="z-index:3">
+              <span class="avatar-tooltip">LinkedIn</span>
+              <a target="_blank" rel="noopener noreferrer" class="block h-full aspect-square" href="https://www.linkedin.com/in/briandicky/">
+                <div class="relative aspect-square h-full rounded-full overflow-hidden border-2 border-foreground shadow-md cursor-pointer bg-surface flex items-center justify-center p-2 text-foreground">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                </div>
+              </a>
+            </div>
+            <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10" style="z-index:2">
+              <span class="avatar-tooltip">Email</span>
+              <a class="block h-full aspect-square" href="mailto:briandicky09@gmail.com">
+                <div class="relative aspect-square h-full rounded-full overflow-hidden border-2 border-foreground shadow-md cursor-pointer bg-surface flex items-center justify-center p-2 text-foreground">
+                  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+              </a>
+            </div>
+          </div>
+          <span class="text-[clamp(1.25rem,2.5vw,1.875rem)] font-medium leading-tight text-foreground tracking-tight font-display">Clean Architecture.</span>
+        </div>
+
+        <p class="text-muted-foreground text-sm md:text-base max-w-2xl mt-2 font-sans leading-relaxed">
+          Informatics undergraduate at UPN "Veteran" Jawa Timur (Sidoarjo, East Java) with 1.5+ years of hands-on experience building full-stack web platforms and AI-powered applications.
+        </p>
+      </div>
+    </section>
+
+    <!-- SELECTED WORK SECTION -->
+    <section id="work" aria-labelledby="work-heading" class="section-padding page-gutter">
+      <div class="flex items-center justify-between mb-15 md:mb-16" data-animated-content data-distance="80" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-threshold="0.1">
+        <h2 id="work-heading" class="text-sm font-display text-foreground">Selected Work</h2>
+      </div>
+
+      <!-- React Bits <FlexCarousel /> Showcase (Full-Bleed Left to Right) -->
+      <div
+        class="flex-carousel-wrapper relative mb-4 md:mb-8 lg:mb-10"
+        data-animated-content
+        data-distance="100"
+        data-direction="vertical"
+        data-duration="0.8"
+        data-ease="power3.out"
+        data-threshold="0.1"
+      >
+        <div
+          id="work-flex-carousel"
+          class="flex-carousel"
+          data-preset="liquid"
+          data-intro="rise"
+          data-card-height="0.48"
+          data-gap="14"
+          data-radius="0"
+          data-fit="showcase"
+          data-squeeze="0.2"
+          data-focus-on-click="true"
+          data-captions="true"
+          style="--flex-carousel-half: 24%;"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Selected Work showcase carousel"
+          tabindex="0"
+        >
+          <div class="flex-carousel__caption" aria-hidden="true">
+            <span class="flex-carousel__title">
+              <span class="flex-carousel__title-text">PUSATKOS</span>
+              <span class="flex-carousel__subtitle">Laravel 12 · PHP 8.2 · MySQL</span>
+            </span>
+            <span class="flex-carousel__count">
+              <span class="flex-carousel__digits">
+                <span class="flex-carousel__digit"><span class="flex-carousel__reel" data-digit-pos="0"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></span></span>
+                <span class="flex-carousel__digit"><span class="flex-carousel__reel" data-digit-pos="1" style="transform: translateY(-10%);"><span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span></span></span>
+              </span>
+              <span class="flex-carousel__slash">/</span>
+              <span class="flex-carousel__total">06</span>
+            </span>
+          </div>
+          <div class="flex-carousel__live" aria-live="polite" aria-atomic="true">PUSATKOS, 1 of 6</div>
+        </div>
+      </div>
+
+      <!-- Interactive Project List with Cursor-Tracking Preview -->
+      <section class="relative w-full mx-auto pt-12">
+        <div id="work-floating-preview" class="pointer-events-none fixed top-0 left-0 z-50 overflow-hidden rounded-xl shadow-2xl hidden lg:block" style="transform:translate3d(20px, -100px, 0);opacity:0;scale:0.8;transition:opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), scale 0.3s cubic-bezier(0.4, 0, 0.2, 1)">
+          <div class="relative w-70 h-45 bg-surface border border-border/50 rounded-xl overflow-hidden shadow-2xl" style="width:320px;height:180px">
+            <img data-preview-id="pusatkos" alt="PUSATKOS Website Preview" src="assets/images/project-previews/pusatkos-preview.png?v=4" class="work-preview-img absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out" style="opacity:0;scale:1.1;filter:blur(10px)" />
+            <img data-preview-id="tanggapin" alt="Tanggapin Website Preview" src="assets/images/project-previews/tanggapin-preview.png?v=4" class="work-preview-img absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out" style="opacity:0;scale:1.1;filter:blur(10px)" />
+            <img data-preview-id="olara" alt="OLARA Website Preview" src="assets/images/project-previews/olara-preview.png?v=4" class="work-preview-img absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out" style="opacity:0;scale:1.1;filter:blur(10px)" />
+            <img data-preview-id="sipemma" alt="SIPEMMA Website Preview" src="assets/images/project-previews/sipemma-preview.png?v=4" class="work-preview-img absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out" style="opacity:0;scale:1.1;filter:blur(10px)" />
+            <img data-preview-id="nalar" alt="Nalar Website Preview" src="assets/images/project-previews/nalar-preview.png?v=4" class="work-preview-img absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out" style="opacity:0;scale:1.1;filter:blur(10px)" />
+            <img data-preview-id="vehicletax" alt="Vehicle Tax Website Preview" src="assets/images/project-previews/vehicle-tax-preview.png?v=4" class="work-preview-img absolute inset-0 w-full h-full object-cover transition-all duration-500 ease-out" style="opacity:0;scale:1.1;filter:blur(10px)" />
+            <div class="absolute inset-0 bg-linear-to-t from-background/20 to-transparent"></div>
+          </div>
+        </div>
+
+        <div class="space-y-0" id="work-list" data-animated-content data-distance="80" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-stagger="0.08" data-threshold="0.1">
+          <!-- 1. PUSATKOS -->
+          <a href="/work/pusatkos/" data-preview-target="pusatkos" class="work-row-item group block">
+            <div class="relative py-7 border-t border-border group-first:border-t-0 transition-all duration-300 ease-out">
+              <div class="absolute inset-0 -mx-4 px-4 bg-surface/50 rounded-lg transition-all duration-300 ease-out opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"></div>
+              <div class="relative flex items-start justify-between gap-4">
+                <div class="flex-1 min-w-0">
+                  <div class="inline-flex items-center gap-2 mb-2">
+                    <h3 class="text-foreground font-sans text-lg">
+                      <span class="relative">PUSATKOS<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+                    </h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-muted-foreground transition-all duration-300 ease-out opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                  </div>
+                  <p class="text-muted-foreground group-hover:text-foreground/70 text-base max-w-3xl transition-all duration-300 ease-out">An integrated boarding house discovery and rental management platform engineered for public visitors, property owners, and tenants with modular MVC architecture and digital invoicing.</p>
+                  <p class="text-[15px] font-sans text-muted-foreground/80 group-hover:text-foreground/60 mt-5 transition-all duration-300 ease-out">
+                    <span>Laravel 12</span>, <span>PHP 8.2</span>, <span>Blade</span>, <span>Bootstrap</span>, <span>MySQL</span>
+                  </p>
+                </div>
+                <span class="text-sm font-sans text-foreground tabular-nums group-hover:text-foreground/60 transition-all duration-300 ease-out">2026</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 2. Tanggapin -->
+          <a href="/work/tanggapin/" data-preview-target="tanggapin" class="work-row-item group block">
+            <div class="relative py-7 border-t border-border transition-all duration-300 ease-out">
+              <div class="absolute inset-0 -mx-4 px-4 bg-surface/50 rounded-lg transition-all duration-300 ease-out opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"></div>
+              <div class="relative flex items-start justify-between gap-4">
+                <div class="flex-1 min-w-0">
+                  <div class="inline-flex items-center gap-2 mb-2">
+                    <h3 class="text-foreground font-sans text-lg">
+                      <span class="relative">Tanggapin<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+                    </h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-muted-foreground transition-all duration-300 ease-out opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                  </div>
+                  <p class="text-muted-foreground group-hover:text-foreground/70 text-base max-w-3xl transition-all duration-300 ease-out">A school operational and management platform connecting student data, early warning risk detection, counseling case workflows, parent communication, and BOS payment validation across six roles.</p>
+                  <p class="text-[15px] font-sans text-muted-foreground/80 group-hover:text-foreground/60 mt-5 transition-all duration-300 ease-out">
+                    <span>Laravel 13</span>, <span>React 19</span>, <span>Inertia.js</span>, <span>TypeScript</span>, <span>Tailwind CSS</span>
+                  </p>
+                </div>
+                <span class="text-sm font-sans text-foreground tabular-nums group-hover:text-foreground/60 transition-all duration-300 ease-out">2026</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- 3. OLARA -->
+          <a href="/work/olara/" data-preview-target="olara" class="work-row-item group block">
+            <div class="relative py-7 border-t border-border transition-all duration-300 ease-out">
+              <div class="absolute inset-0 -mx-4 px-4 bg-surface/50 rounded-lg transition-all duration-300 ease-out opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"></div>
+              <div class="relative flex items-start justify-between gap-4">
+                <div class="flex-1 min-w-0">
+                  <div class="inline-flex items-center gap-2 mb-2">
+                    <h3 class="text-foreground font-sans text-lg">
+                      <span class="relative">OLARA<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+                    </h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-muted-foreground transition-all duration-300 ease-out opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                  </div>
+                  <p class="text-muted-foreground group-hover:text-foreground/70 text-base max-w-3xl transition-all duration-300 ease-out">A smart circular waste management and eco-wellness platform combining AI recyclable material scanning, doorstep fleet pickup scheduling, Midtrans Snap payments, and carbon reduction analytics.</p>
+                  <p class="text-[15px] font-sans text-muted-foreground/80 group-hover:text-foreground/60 mt-5 transition-all duration-300 ease-out">
+                    <span>Laravel 13</span>, <span>PHP 8.3</span>, <span>Tailwind CSS v4</span>, <span>Midtrans Snap</span>, <span>MySQL</span>
+                  </p>
+                </div>
+                <span class="text-sm font-sans text-foreground tabular-nums group-hover:text-foreground/60 transition-all duration-300 ease-out">2026</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Collapsible Remaining Projects (4, 5, 6) -->
+          <div id="work-more-collapse" class="work-more-collapse" data-expanded="false" aria-hidden="true">
+            <div class="work-more-inner">
+              <!-- 4. SIPEMMA -->
+              <a href="/work/sipemma/" data-preview-target="sipemma" class="work-row-item group block">
+                <div class="relative py-7 border-t border-border transition-all duration-300 ease-out">
+                  <div class="absolute inset-0 -mx-4 px-4 bg-surface/50 rounded-lg transition-all duration-300 ease-out opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"></div>
+                  <div class="relative flex items-start justify-between gap-4">
+                    <div class="flex-1 min-w-0">
+                      <div class="inline-flex items-center gap-2 mb-2">
+                        <h3 class="text-foreground font-sans text-lg">
+                          <span class="relative">SIPEMMA<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-muted-foreground transition-all duration-300 ease-out opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                      </div>
+                      <p class="text-muted-foreground group-hover:text-foreground/70 text-base max-w-3xl transition-all duration-300 ease-out">An integrated Point of Sale (POS) and restaurant operations web application featuring real-time cashier cart, Dine-In/Take-Away workflows, automatic PB1 tax calculation, and a Google Gemini AI business assistant.</p>
+                      <p class="text-[15px] font-sans text-muted-foreground/80 group-hover:text-foreground/60 mt-5 transition-all duration-300 ease-out">
+                        <span>Laravel 13</span>, <span>PHP 8.3</span>, <span>Tailwind CSS v4</span>, <span>Google Gemini AI</span>, <span>MySQL</span>
+                      </p>
+                    </div>
+                    <span class="text-sm font-sans text-foreground tabular-nums group-hover:text-foreground/60 transition-all duration-300 ease-out">2026</span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- 5. Nalar -->
+              <a href="/work/nalar/" data-preview-target="nalar" class="work-row-item group block">
+                <div class="relative py-7 border-t border-border transition-all duration-300 ease-out">
+                  <div class="absolute inset-0 -mx-4 px-4 bg-surface/50 rounded-lg transition-all duration-300 ease-out opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"></div>
+                  <div class="relative flex items-start justify-between gap-4">
+                    <div class="flex-1 min-w-0">
+                      <div class="inline-flex items-center gap-2 mb-2">
+                        <h3 class="text-foreground font-sans text-lg">
+                          <span class="relative">Nalar<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-muted-foreground transition-all duration-300 ease-out opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                      </div>
+                      <p class="text-muted-foreground group-hover:text-foreground/70 text-base max-w-3xl transition-all duration-300 ease-out">An AI-powered personalized learning companion web application that extracts lecture PDFs, identifies conceptual comprehension gaps, and delivers adaptive tutor guidance for university students.</p>
+                      <p class="text-[15px] font-sans text-muted-foreground/80 group-hover:text-foreground/60 mt-5 transition-all duration-300 ease-out">
+                        <span>Next.js</span>, <span>React 19</span>, <span>TypeScript</span>, <span>Tailwind CSS</span>, <span>Framer Motion</span>
+                      </p>
+                    </div>
+                    <span class="text-sm font-sans text-foreground tabular-nums group-hover:text-foreground/60 transition-all duration-300 ease-out">2026</span>
+                  </div>
+                </div>
+              </a>
+
+              <!-- 6. Vehicle Tax -->
+              <a href="/work/vehicle-tax/" data-preview-target="vehicletax" class="work-row-item group block">
+                <div class="relative py-7 border-t border-border transition-all duration-300 ease-out">
+                  <div class="absolute inset-0 -mx-4 px-4 bg-surface/50 rounded-lg transition-all duration-300 ease-out opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"></div>
+                  <div class="relative flex items-start justify-between gap-4">
+                    <div class="flex-1 min-w-0">
+                      <div class="inline-flex items-center gap-2 mb-2">
+                        <h3 class="text-foreground font-sans text-lg">
+                          <span class="relative">Vehicle Tax<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+                        </h3>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-muted-foreground transition-all duration-300 ease-out opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                      </div>
+                      <p class="text-muted-foreground group-hover:text-foreground/70 text-base max-w-3xl transition-all duration-300 ease-out">A desktop suite implementing object-oriented PKB and SWDKLLJ vehicle tax calculation with owner/vehicle registry, transaction history, and persistent file storage across Java Swing and C++ Qt.</p>
+                      <p class="text-[15px] font-sans text-muted-foreground/80 group-hover:text-foreground/60 mt-5 transition-all duration-300 ease-out">
+                        <span>Java</span>, <span>Swing</span>, <span>C++</span>, <span>Qt Creator</span>, <span>Qt Widgets</span>
+                      </p>
+                    </div>
+                    <span class="text-sm font-sans text-foreground tabular-nums group-hover:text-foreground/60 transition-all duration-300 ease-out">2026</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Show More / Show Less Toggle Button -->
+          <div class="work-toggle-wrap">
+            <button id="work-toggle-btn" type="button" class="work-toggle-btn" aria-expanded="false" aria-controls="work-more-collapse">
+              <span id="work-toggle-label">Show more projects (3)</span>
+              <svg class="work-toggle-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- LIQUID CHROME BANNER (Between Vehicle Tax & Experience) -->
+    <div class="page-gutter waves-banner-section" aria-hidden="true" data-animated-content data-distance="80" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-threshold="0.1">
+      <div class="waves-banner-box">
+        <div
+          id="work-liquid-chrome"
+          class="liquid-chrome"
+          data-color="#ffffff"
+          data-speed="0.2"
+          data-amplitude="0.3"
+          data-detail="4"
+          data-thickness="1"
+          data-interactive="true"
+        >
+          <canvas class="liquid-chrome__canvas" aria-hidden="true"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE SECTION (Using Brian's exact 2-column grid layout) -->
+    <section id="experience" aria-labelledby="experience-heading" class="section-padding page-gutter pt-10!">
+      <h2 id="experience-heading" class="text-base font-display text-foreground mb-8 md:mb-16" data-animated-content data-distance="80" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-threshold="0.1">Experience</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-x-10" role="list" aria-label="Professional and training experience" data-animated-content data-distance="100" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-stagger="0.08" data-threshold="0.1">
+        <!-- Exp 1 -->
+        <a href="https://github.com/briandicky09/PUSATKOS" class="group block h-full md:order-1" target="_blank" rel="noopener noreferrer" role="listitem">
+          <div class="relative h-full py-7 md:pt-0 md:pb-10 border-t border-t-0! md:border-t-0 border-border transition-all duration-300 ease-out flex flex-col">
+            <div class="absolute inset-0 -mx-4 px-4 bg-surface/50 rounded-lg transition-all duration-300 ease-out opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"></div>
+            <div class="relative flex-1 flex items-start justify-between gap-4">
+              <div class="flex-1 min-w-0 h-full flex flex-col">
+                <div class="inline-flex items-center gap-2 mb-2">
+                  <h3 class="text-foreground font-sans text-lg">
+                    <span class="relative">Fullstack Web Developer · Javatekno Mitra Solusi<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+                  </h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-muted-foreground transition-all duration-300 ease-out opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </div>
+                <p class="text-muted-foreground text-base max-w-3xl transition-all duration-300 ease-out group-hover:text-foreground/70">Developing the PUSATKOS platform in Laravel 12 and PHP 8.2. Engineered multi-role workflows for public visitors, kos owners, and tenants with modular MVC layers and MySQL integration.</p>
+                <p class="text-[15px] font-sans text-muted-foreground/80 mt-auto pt-5 transition-all duration-300 ease-out group-hover:text-foreground/60">
+                  <span>Laravel 12</span>, <span>PHP 8.2</span>, <span>Blade</span>, <span>Bootstrap</span>, <span>MySQL</span>, <span>MVC</span>
+                </p>
+              </div>
+              <span class="text-sm mt-1 font-sans text-foreground tabular-nums transition-all duration-300 ease-out group-hover:text-foreground/60 whitespace-nowrap">2026</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Exp 2 -->
+        <a href="https://github.com/briandicky09" class="group block h-full md:order-1" target="_blank" rel="noopener noreferrer" role="listitem">
+          <div class="relative h-full py-7 md:pt-0 md:pb-10 border-t md:border-t-0 border-border transition-all duration-300 ease-out flex flex-col">
+            <div class="absolute inset-0 -mx-4 px-4 bg-surface/50 rounded-lg transition-all duration-300 ease-out opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"></div>
+            <div class="relative flex-1 flex items-start justify-between gap-4">
+              <div class="flex-1 min-w-0 h-full flex flex-col">
+                <div class="inline-flex items-center gap-2 mb-2">
+                  <h3 class="text-foreground font-sans text-lg">
+                    <span class="relative">AI Full-Stack Developer · Asah by Dicoding (GoTo)<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+                  </h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-muted-foreground transition-all duration-300 ease-out opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </div>
+                <p class="text-muted-foreground text-base max-w-3xl transition-all duration-300 ease-out group-hover:text-foreground/70">Industry-oriented, project-based engineering program focused on full-stack web architecture, React, modern JavaScript, and AI integration.</p>
+                <p class="text-[15px] font-sans text-muted-foreground/80 mt-auto pt-5 transition-all duration-300 ease-out group-hover:text-foreground/60">
+                  <span>Fullstack Web</span>, <span>React</span>, <span>JavaScript</span>, <span>AI Integration</span>
+                </p>
+              </div>
+              <span class="text-sm mt-1 font-sans text-foreground tabular-nums transition-all duration-300 ease-out group-hover:text-foreground/60 whitespace-nowrap">2026</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Exp 3 -->
+        <a href="https://github.com/briandicky09" class="group block h-full md:col-span-2 md:order-3" target="_blank" rel="noopener noreferrer" role="listitem">
+          <div class="relative h-full py-7 md:pt-10 md:pb-10 border-t border-border transition-all duration-300 ease-out flex flex-col">
+            <div class="absolute inset-0 -mx-4 px-4 bg-surface/50 rounded-lg transition-all duration-300 ease-out opacity-0 scale-95 group-hover:opacity-100 group-hover:scale-100"></div>
+            <div class="relative flex-1 flex items-start justify-between gap-4">
+              <div class="flex-1 min-w-0 h-full flex flex-col">
+                <div class="inline-flex items-center gap-2 mb-2">
+                  <h3 class="text-foreground font-sans text-lg">
+                    <span class="relative">Fullstack Web Developer · Dicoding &amp; DBS Foundation<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+                  </h3>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-muted-foreground transition-all duration-300 ease-out opacity-0 -translate-x-2 translate-y-2 group-hover:opacity-100 group-hover:translate-x-0 group-hover:translate-y-0" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg>
+                </div>
+                <p class="text-muted-foreground text-base max-w-3xl transition-all duration-300 ease-out group-hover:text-foreground/70">Built a fullstack web application featuring 3 CRUD modules with complete data lifecycle management and relational database integration.</p>
+                <p class="text-[15px] font-sans text-muted-foreground/80 mt-auto pt-5 transition-all duration-300 ease-out group-hover:text-foreground/60">
+                  <span>Frontend–Backend Integration</span>, <span>CRUD Operations</span>, <span>Database</span>
+                </p>
+              </div>
+              <span class="text-sm mt-1 font-sans text-foreground tabular-nums transition-all duration-300 ease-out group-hover:text-foreground/60 whitespace-nowrap">2026</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- QUALIFICATIONS, EDUCATION & TECH STACK SECTION (Brian's exact 2-column layout) -->
+    <section id="qualifications" aria-labelledby="qualifications-heading" class="section-padding page-gutter">
+      <h2 id="qualifications-heading" class="text-base font-display text-foreground mb-15 md:mb-16" data-animated-content data-distance="80" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-threshold="0.1">Education &amp; Stack</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 lg:gap-24 xl:gap-32 items-start">
+        <!-- Left Column: Education & Programs -->
+        <div class="grid grid-cols-2 gap-x-4 sm:gap-x-6 gap-y-6 md:flex md:flex-col md:space-y-4 md:gap-0" data-animated-content data-distance="100" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-stagger="0.08" data-threshold="0.1">
+          <div class="group relative flex flex-col pb-0 md:pb-8">
+            <span class="relative text-foreground font-medium w-fit max-w-full text-base transition-all duration-300">Informatics Undergraduate · UPN "Veteran" Jawa Timur<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+            <div class="pt-1">
+              <span class="flex text-[15px] leading-snug md:text-base max-w-xl text-wrap text-muted-foreground font-sans tracking-wide">Fifth-semester Informatics student focusing on software engineering, database design, object-oriented programming, and web systems architecture.</span>
+            </div>
+            <p class="text-[13px] font-sans text-muted-foreground/80 pt-2 transition-all duration-300 ease-out group-hover:text-foreground/60">
+              <span>Software Engineering</span>, <span>OOP</span>, <span>Database Design &amp; ERD</span>
+            </p>
+          </div>
+          <div class="group relative flex flex-col pb-0 md:pb-8">
+            <span class="relative text-foreground font-medium w-fit max-w-full text-base transition-all duration-300">Fullstack Web Developer Intern<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+            <div class="pt-1">
+              <span class="flex text-[15px] leading-snug md:text-base max-w-xl text-wrap text-muted-foreground font-sans tracking-wide">Javatekno Mitra Solusi - Aug 2026 to Present</span>
+            </div>
+          </div>
+          <div class="group relative flex flex-col pb-0 md:pb-8">
+            <span class="relative text-foreground font-medium w-fit max-w-full text-base transition-all duration-300">AI Full-Stack Developer Program<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+            <div class="pt-1">
+              <span class="flex text-[15px] leading-snug md:text-base max-w-xl text-wrap text-muted-foreground font-sans tracking-wide">Asah by Dicoding (Supported by GoTo) - 2026</span>
+            </div>
+          </div>
+          <div class="group relative flex flex-col pb-0 md:pb-8">
+            <span class="relative text-foreground font-medium w-fit max-w-full text-base transition-all duration-300">Coding Camp Fullstack Web Developer<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+            <div class="pt-1">
+              <span class="flex text-[15px] leading-snug md:text-base max-w-xl text-wrap text-muted-foreground font-sans tracking-wide">Dicoding &amp; DBS Foundation - Mar to Jun 2026</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Marquee Card + Stack + Tools -->
+        <div class="flex flex-col" data-animated-content data-distance="100" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-stagger="0.1" data-threshold="0.1">
+          <div class="group bg-surface border border-border rounded-3xl p-5 sm:p-6 flex flex-row items-center gap-4 sm:gap-5 mb-10 md:mb-10 lg:mb-15 w-full max-w-none md:max-w-xl">
+            <div class="w-14 h-14 sm:w-15 sm:h-15 shrink-0 bg-background border border-border rounded-xl flex items-center justify-center font-mono text-base text-muted-foreground relative overflow-hidden">
+              <img alt="Laravel &amp; React" src="assets/icons/stack/react.svg" class="object-contain p-3 w-full h-full" />
+            </div>
+            <div class="flex flex-col min-w-0 flex-1">
+              <span class="relative text-foreground font-medium w-fit truncate max-w-full transition-all duration-300">Clean Architecture &amp; AI Integration<span class="absolute left-0 -bottom-0.5 h-px bg-foreground transition-all duration-300 ease-out w-0 group-hover:w-full"></span></span>
+              <div class="pt-1 w-full">
+                <div class="relative flex overflow-hidden whitespace-nowrap" style="mask-image:linear-gradient(to right, transparent, black 15%, black 85%, transparent);-webkit-mask-image:linear-gradient(to right, transparent, black 15%, black 85%, transparent)">
+                  <div class="animate-marquee flex text-sm md:text-base text-muted-foreground font-sans tracking-wide">
+                    <span class="pr-10">Laravel 12/13 • React 19 • Next.js • TypeScript • Tailwind CSS • Google Gemini AI • MySQL</span>
+                    <span class="pr-10">Laravel 12/13 • React 19 • Next.js • TypeScript • Tailwind CSS • Google Gemini AI • MySQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:flex md:flex-col gap-6 md:gap-0 items-start">
+            <div class="mb-0 md:mb-7 lg:mb-15">
+              <span class="text-muted-foreground text-sm font-sans mb-2 uppercase block">stack</span>
+              <p class="text-foreground text-base md:text-base leading-relaxed flex flex-wrap items-center gap-x-2 gap-y-2 max-w-md">
+                <span class="font-sans">Laravel<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">PHP<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">React<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">Next.js<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">TypeScript<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">Tailwind CSS<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">Inertia.js<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">JavaScript (ES6+)<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">MySQL<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">SQLite<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">HTML5 &amp; CSS3<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">Bootstrap<span class="text-muted-foreground">,</span></span>
+                <span class="font-sans">Framer Motion</span>
+                <span class="text-muted-foreground">...</span>
+                <span class="px-2.5 py-0.5 bg-surface border border-border rounded-full text-sm font-sans text-muted-foreground">+6</span>
+              </p>
+            </div>
+
+            <div class="flex flex-col">
+              <span class="text-muted-foreground text-sm font-sans mb-2 uppercase block">tools</span>
+              <div data-slot="avatar-group" style="display:flex;align-items:center" class="h-9 md:h-9 -space-x-2.5">
+                <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10" style="z-index:8">
+                  <span class="avatar-tooltip">Git</span>
+                  <div class="relative aspect-square h-full rounded-full overflow-hidden border border-border cursor-pointer bg-surface p-2">
+                    <img alt="Git" src="assets/icons/stack/git.svg" class="object-contain w-full h-full" />
+                  </div>
+                </div>
+                <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10" style="z-index:7">
+                  <span class="avatar-tooltip">GitHub</span>
+                  <div class="relative aspect-square h-full rounded-full overflow-hidden border border-border cursor-pointer bg-surface p-2">
+                    <img alt="GitHub" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" class="object-contain w-full h-full" style="filter:invert(1)" />
+                  </div>
+                </div>
+                <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10" style="z-index:6">
+                  <span class="avatar-tooltip">VS Code</span>
+                  <div class="relative aspect-square h-full rounded-full overflow-hidden border border-border cursor-pointer bg-surface p-2">
+                    <img alt="VS Code" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" class="object-contain w-full h-full" />
+                  </div>
+                </div>
+                <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10" style="z-index:5">
+                  <span class="avatar-tooltip">Vite</span>
+                  <div class="relative aspect-square h-full rounded-full overflow-hidden border border-border cursor-pointer bg-surface p-2">
+                    <img alt="Vite" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg" class="object-contain w-full h-full" />
+                  </div>
+                </div>
+                <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10" style="z-index:4">
+                  <span class="avatar-tooltip">Google Gemini AI</span>
+                  <div class="relative aspect-square h-full rounded-full overflow-hidden border border-border cursor-pointer bg-surface p-2">
+                    <img alt="Google Gemini AI" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" class="object-contain w-full h-full" />
+                  </div>
+                </div>
+                <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10" style="z-index:3">
+                  <span class="avatar-tooltip">Postman</span>
+                  <div class="relative aspect-square h-full rounded-full overflow-hidden border border-border cursor-pointer bg-surface p-2">
+                    <img alt="Postman" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" class="object-contain w-full h-full" />
+                  </div>
+                </div>
+                <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10" style="z-index:2">
+                  <span class="avatar-tooltip">Vercel</span>
+                  <div class="relative aspect-square h-full rounded-full overflow-hidden border border-border cursor-pointer bg-surface p-2">
+                    <img alt="Vercel" src="assets/icons/stack/vercel.svg" class="object-contain w-full h-full" />
+                  </div>
+                </div>
+                <div class="has-tooltip relative h-full aspect-square shrink-0 hover:z-10" style="z-index:1">
+                  <span class="avatar-tooltip">Figma</span>
+                  <div class="relative aspect-square h-full rounded-full overflow-hidden border border-border cursor-pointer bg-surface p-2">
+                    <img alt="Figma" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="object-contain w-full h-full" />
+                  </div>
+                </div>
+                <div class="relative h-full aspect-square shrink-0" style="z-index:0">
+                  <div class="relative aspect-square w-full h-full rounded-full overflow-hidden bg-surface shadow-sm flex items-center justify-center text-xs font-medium text-foreground select-none bg-linear-to-b from-background to-foreground/30 border-2 border-border">+2</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION (Brian's exact 2-column Contact layout) -->
+    <section id="contact" aria-labelledby="contact-heading" class="section-padding page-gutter">
+      <h2 id="contact-heading" class="text-base font-display text-foreground mb-15 md:mb-16" data-animated-content data-distance="80" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-threshold="0.1">Get In Touch</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-0 lg:gap-16 items-start" data-animated-content data-distance="100" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-stagger="0.12" data-threshold="0.1">
+        <div class="space-y-6 h-full max-w-sm flex flex-col justify-end md:pe-12 lg:pe-0">
+          <!-- Copy Email Button -->
+          <button id="copy-email-btn" type="button" class="group w-full rounded-[var(--radius-card)] bg-surface p-5 sm:p-6 flex items-center justify-between transition-all duration-300 text-left cursor-pointer hover:bg-surface/80" aria-label="Copy briandicky09@gmail.com">
+            <span id="copy-email-text" class="font-medium text-foreground group-hover:text-foreground transition-colors duration-300">briandicky09@gmail.com</span>
+            <div class="flex items-center justify-center w-5 h-5">
+              <div class="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true">
+                  <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                  <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                </svg>
+              </div>
+            </div>
+          </button>
+
+          <!-- Bio / Profile Card -->
+          <a href="https://github.com/briandicky09" target="_blank" rel="noopener noreferrer" aria-label="Visit Brian's GitHub Profile" class="group block max-w-md rounded-[var(--radius-card)] bg-surface p-6 md:p-7 transition-all duration-300">
+            <div class="flex items-start gap-5 mb-8">
+              <div class="w-24 h-24 sm:w-28 sm:h-28 rounded-xl bg-muted/20 border border-border/50 overflow-hidden shrink-0 flex items-center justify-center relative">
+                <img alt="Brian Dicky Vanka Andaraneva" src="assets/images/profile-new.png" class="object-cover w-full h-full" style="object-position:center top" />
+              </div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-2 mb-3 pt-1">
+                  <h3 class="text-base font-sans tracking-tight text-foreground group-hover:text-foreground transition-colors">Brian Dicky Vanka A.</h3>
+                  <div class="inline-flex items-center justify-center text-muted-foreground group-hover:text-foreground transition-colors shrink-0">
+                    <svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M7 7H17"></path><path d="M17 7V17"></path><path d="M7 17L17 7"></path></svg>
+                  </div>
+                </div>
+                <p class="text-sm text-muted-foreground group-hover:text-foreground/70 transition-colors duration-300 leading-relaxed line-clamp-3">Fullstack Web Developer based in Sidoarjo, East Java. Open to internships, freelance projects, and full-stack engineering collaborations.</p>
+              </div>
+            </div>
+            <div class="flex items-center justify-between text-xs font-sans border-border/40">
+              <span class="text-muted-foreground/50 group-hover:text-foreground/70 transition-colors duration-300">github.com/briandicky09</span>
+              <span class="text-muted-foreground/50">Sidoarjo, ID</span>
+            </div>
+          </a>
+
+          <!-- Social Media Links -->
+          <nav aria-label="Social media links">
+            <div class="flex flex-wrap justify-evenly md:justify-start items-center -mt-2 md:mt-0 gap-x-2 md:gap-x-3 gap-y-3 text-base text-muted-foreground">
+              <span class="inline-flex items-center">
+                <a href="https://github.com/briandicky09" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-1 text-muted-foreground/80 hover:text-foreground transition-colors">
+                  <span class="underline-offset-4">github</span>
+                  <div class="inline-flex items-center justify-center text-muted-foreground group-hover:text-foreground transition-colors shrink-0">
+                    <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7H17"></path><path d="M17 7V17"></path><path d="M7 17L17 7"></path></svg>
+                  </div>
+                </a>
+                <span class="text-muted-foreground px-2"></span>
+              </span>
+              <span class="inline-flex items-center">
+                <a href="https://www.linkedin.com/in/briandicky/" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-1 text-muted-foreground/80 hover:text-foreground transition-colors">
+                  <span class="underline-offset-4">linkedin</span>
+                  <div class="inline-flex items-center justify-center text-muted-foreground group-hover:text-foreground transition-colors shrink-0">
+                    <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7H17"></path><path d="M17 7V17"></path><path d="M7 17L17 7"></path></svg>
+                  </div>
+                </a>
+                <span class="text-muted-foreground px-2"></span>
+              </span>
+              <span class="inline-flex items-center">
+                <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=briandicky09@gmail.com" target="_blank" rel="noopener noreferrer" class="group inline-flex items-center gap-1 text-muted-foreground/80 hover:text-foreground transition-colors">
+                  <span class="underline-offset-4">email</span>
+                  <div class="inline-flex items-center justify-center text-muted-foreground group-hover:text-foreground transition-colors shrink-0">
+                    <svg fill="none" height="14" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="14" xmlns="http://www.w3.org/2000/svg"><path d="M7 7H17"></path><path d="M17 7V17"></path><path d="M7 17L17 7"></path></svg>
+                  </div>
+                </a>
+              </span>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="rounded-[var(--radius-card)] bg-surface min-h-[28rem] flex flex-col justify-center" aria-label="Contact form" role="region">
+          <div class="relative overflow-hidden h-full lg:min-h-126 flex flex-col justify-center">
+            <form id="contact-form" class="h-full p-6 md:p-8 lg:p-12 space-y-6 flex flex-col justify-center">
+              <div class="space-y-1">
+                <label for="name" class="block text-sm font-medium text-foreground">Full Name</label>
+                <input type="text" id="name" required placeholder="Enter Your Full Name" class="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all duration-500" name="name" />
+              </div>
+              <div class="space-y-1">
+                <label for="email" class="block text-sm font-medium text-foreground">Email Address</label>
+                <input type="email" id="email" required placeholder="Enter Your Email Address" class="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all duration-500" name="email" />
+              </div>
+              <div class="space-y-1">
+                <label for="message" class="block text-sm font-medium text-foreground">Message</label>
+                <textarea name="message" id="message" required placeholder="Write Your Message Here" rows="4" class="w-full bg-background border border-border rounded-xl px-4 py-3.5 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all duration-500 resize-none"></textarea>
+              </div>
+              <div class="pt-2">
+                <button type="submit" class="group relative inline-flex items-center justify-center gap-2 px-6 py-3 bg-foreground text-background rounded-full overflow-hidden transition-all duration-300 hover:bg-foreground/80 active:scale-95 cursor-pointer">
+                  <span class="flex items-center gap-2 text-sm font-medium">
+                    Send Message
+                    <div class="pointer-events-none">
+                      <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                    </div>
+                  </span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer role="contentinfo" class="relative w-full overflow-hidden select-none bg-linear-to-t from-background to-surface/50 mt-20 md:mt-40" aria-label="Site footer">
+    <div class="w-full page-gutter mx-auto h-px bg-linear-to-r from-transparent via-border dark:via-foreground/20 to-transparent"></div>
+    <div class="relative z-10 pt-16 md:pt-20 page-gutter flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-8 w-full" data-animated-content data-distance="60" data-direction="vertical" data-duration="0.8" data-ease="power3.out" data-stagger="0.08" data-threshold="0.1">
+      <div class="flex flex-col sm:flex-row items-start gap-10 sm:gap-16 md:gap-24 w-full lg:w-auto">
+        <div class="flex flex-col gap-4 sm:gap-6 w-full sm:w-full lg:w-auto">
+          <h3 class="text-xs sm:text-sm font-sans font-medium sm:text-start md:text-center lg:text-start w-full sm:w-auto text-muted-foreground uppercase tracking-wider">Navigation</h3>
+          <ul class="flex sm:flex-col md:flex-row flex-wrap items-center sm:items-start lg:justify-start gap-x-6 gap-y-3">
+            <li><a class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit" href="#about"><span class="relative pb-1 underline underline-offset-3">about</span></a></li>
+            <li><a class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit" href="#work"><span class="relative pb-1 underline underline-offset-3">work</span></a></li>
+            <li><a class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit" href="#experience"><span class="relative pb-1 underline underline-offset-3">experience</span></a></li>
+            <li><a class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit" href="#contact"><span class="relative pb-1 underline underline-offset-3">contact</span></a></li>
+          </ul>
+        </div>
+        <div class="flex flex-col gap-4 sm:gap-6 w-full sm:w-full lg:w-auto">
+          <h3 class="text-xs sm:text-sm font-sans font-medium sm:text-start md:text-center lg:text-start w-full sm:w-auto text-muted-foreground uppercase tracking-wider">Socials</h3>
+          <ul class="flex sm:flex-col md:flex-row flex-wrap items-center sm:items-start lg:justify-start gap-x-6 gap-y-3">
+            <li><a href="https://github.com/briandicky09" target="_blank" rel="noopener noreferrer" class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit"><span class="relative pb-1 underline underline-offset-3">github</span></a></li>
+            <li><a href="https://www.linkedin.com/in/briandicky/" target="_blank" rel="noopener noreferrer" class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit"><span class="relative pb-1 underline underline-offset-3">linkedin</span></a></li>
+            <li><a href="mailto:briandicky09@gmail.com" class="text-[15px] sm:text-base text-foreground/65 hover:text-foreground transition-colors duration-300 group flex items-center w-fit"><span class="relative pb-1 underline underline-offset-3">email</span></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="flex flex-col lg:items-end text-center lg:text-right w-full lg:w-auto pt-8 sm:pt-10 md:pt-12 lg:pt-0">
+        <p class="text-xs sm:text-sm font-sans font-medium text-muted-foreground uppercase tracking-wider leading-relaxed">
+          © 2026 | Designed &amp; Developed by <a href="mailto:briandicky09@gmail.com" class="text-foreground/80 hover:text-foreground underline underline-offset-3 transition-colors">brian</a>
+        </p>
+      </div>
+    </div>
+    <div class="relative z-10 w-full mt-12 sm:mt-15 md:mt-18 lg:mt-20 flex items-end justify-center overflow-hidden lg:pt-20" data-animated-content data-distance="80" data-direction="vertical" data-duration="0.9" data-ease="power3.out" data-threshold="0.05">
+      <p class="text-[14.5vw] font-light tracking-tight text-muted-foreground/20 uppercase text-center opacity-90 font-display select-none pointer-events-none footer-massive-text" aria-label="ANDARANEVA — portfolio footer" style="font-family: 'brianFont', var(--font-brian), sans-serif; font-size: 14vw; line-height: 0.8; transform: translateY(12%);">ANDARANEVA</p>
+    </div>
+  </footer>
+
+  <!-- STAR METHOD PROJECT DETAIL MODAL -->
+  <div id="star-modal" class="star-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="star-modal-title">
+    <div class="star-modal-card custom-scrollbar">
+      <div class="flex items-start justify-between gap-4 pb-6 border-b border-border">
+        <div>
+          <span id="star-modal-meta" class="text-xs font-mono uppercase tracking-wider text-muted-foreground block mb-1">Web Application · 2026</span>
+          <h3 id="star-modal-title" class="text-2xl md:text-3xl font-display text-foreground">Project Title</h3>
+        </div>
+        <button id="star-modal-close" type="button" class="h-10 w-10 rounded-full bg-background border border-border flex items-center justify-center text-muted-foreground hover:text-foreground cursor-pointer shrink-0" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </button>
+      </div>
+
+      <div class="my-6 rounded-xl overflow-hidden border border-border bg-background aspect-video relative">
+        <img id="star-modal-img" src="" alt="" class="w-full h-full object-cover select-none" />
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+        <div class="p-5 rounded-2xl bg-background border border-border">
+          <span class="text-xs font-mono uppercase tracking-wider text-muted-foreground block mb-2">S — Situation</span>
+          <p id="star-modal-s" class="text-sm md:text-base text-foreground/90 leading-relaxed"></p>
+        </div>
+        <div class="p-5 rounded-2xl bg-background border border-border">
+          <span class="text-xs font-mono uppercase tracking-wider text-muted-foreground block mb-2">T — Task</span>
+          <p id="star-modal-t" class="text-sm md:text-base text-foreground/90 leading-relaxed"></p>
+        </div>
+        <div class="p-5 rounded-2xl bg-background border border-border">
+          <span class="text-xs font-mono uppercase tracking-wider text-muted-foreground block mb-2">A — Action</span>
+          <p id="star-modal-a" class="text-sm md:text-base text-foreground/90 leading-relaxed"></p>
+        </div>
+        <div class="p-5 rounded-2xl bg-background border border-border">
+          <span class="text-xs font-mono uppercase tracking-wider text-muted-foreground block mb-2">R — Result</span>
+          <p id="star-modal-r" class="text-sm md:text-base text-foreground/90 leading-relaxed"></p>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pt-6 border-t border-border">
+        <div id="star-modal-stack" class="flex flex-wrap gap-2"></div>
+        <a id="star-modal-repo" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-foreground text-background text-sm font-medium hover:opacity-90 transition-opacity shrink-0">
+          <span>GitHub Repository</span>
+          <svg fill="none" height="16" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="16"><path d="M7 7H17"></path><path d="M17 7V17"></path><path d="M7 17L17 7"></path></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/js/lenis.min.js"></script>
+  <script src="/assets/js/gsap.min.js"></script>
+  <script src="/assets/js/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/brian-2026.js?v=8"></script>
+</body>
+</html>

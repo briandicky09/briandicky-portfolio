@@ -1,0 +1,131 @@
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+.recaptcha-icon {
+    display: none;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #1a1a1a;
+    border: 1px solid #252525;
+    border-radius: 15px;
+    height: 42px;
+    width: 100px;
+}
+
+.recaptcha-icon img {
+    height: 100%;
+}
+
+.contact-section {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.contact-section .row>* {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.emailjs-container {
+    max-width: 500px;
+    padding: 30px;
+    background-color: #111;
+    border-radius: 25px;
+    /* border: 1px solid #252525; */
+}
+
+.contact-card-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    background-color: #111;
+    border-radius: 12px;
+}
+
+.contact-card {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 25px;
+    color: #fff;
+    background-color: #1a1a1a;
+    border: 1px solid #252525;
+    border-radius: 18px;
+    margin: 10px 0 20px 0;
+}
+
+.contact-card span {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    filter: invert(1);
+}
+
+.contact-text-card {
+    width: 100%;
+    padding: 15px 25px;
+    color: #fff;
+    font-size: 1rem;
+    /* font-weight: bold; */
+    margin: 10px 0 20px 0;
+}
+
+.contact-text-card span {
+    font-size: 1rem;
+}
+
+#nameInput {
+    text-transform: capitalize;
+}
+
+.contact-input {
+    width: 100%;
+    padding: 15px 25px;
+    margin: 10px 0;
+    background-color: #1a1a1a;
+    border: 1px solid #252525;
+    border-radius: 18px;
+    color: #fff;
+}
+
+.contact-input::placeholder {
+    color: #fff;
+}
+
+.contact-button {
+    --p1: 12px;
+    --p2: 25px;
+    --p3: 35px;
+    --p4: 32px;
+    --p5: 45px;
+    --p6: 40px;
+    /* width: 100%; */
+    padding: var(--p1) var(--p2) var(--p1) var(--p3);
+    background: var(--gradient-orange-crush),
+        url('https://assets.codepen.io/16327/noise.png');
+    background-blend-mode: color-dodge;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 18px 8px 18px 18px;
+    transition: filter 0.3s ease, padding 0.3s ease;
+}
+
+.contact-button div {
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    filter: saturate(1.5);
+    padding: var(--p1) var(--p4) var(--p1) var(--p5);
+}
+
+.contact-button:active {
+    padding: var(--p1) var(--p2) var(--p1) var(--p6);
+}
