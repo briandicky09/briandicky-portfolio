@@ -1,120 +1,74 @@
-<div style="text-align: center;">
-	<table>
-	  <tr>
-	    <td style="width: 50%;">
-	      	<a href="#">
-	    		<img src="https://github.com/user-attachments/assets/c943acab-ed54-4067-abcb-6f877d7368c3" 
-				alt="Website Preview" >
-	  		</a>
-	    </td>
-	    <td style="width: 50%;">
-	      	<a href="#">
-	    		<img src="assets/images/banner/link-banner-preview-og.jpg" alt="Website Preview" >
-	  		</a>
-	    </td>
-	  </tr>
-	</table>
-</div>
+# Brian — Personal Portfolio (2026 Edition)
 
-#### A static portfolio website that highlights:
+<p align="left">
+  <a href="https://github.com/briandicky09"><img src="https://img.shields.io/badge/Developer-Brian%20Dicky-black?style=flat-square" alt="Developer" /></a>
+  <a href="https://github.com/briandicky09"><img src="https://img.shields.io/badge/Stack-Laravel%20%7C%20React%20%7C%20Tailwind-black?style=flat-square" alt="Tech Stack" /></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-black?style=flat-square" alt="License" /></a>
+</p>
 
-- Hero area with smooth parallax and marquee animations
-- About section with a flowing, hover‑reactive menu
-- Projects grid with interactive, GSAP‑driven 3D tilt cards and live previews
-- Skills marquee showcasing tech stack icons
-- Contact section using EmailJS + reCAPTCHA with client‑side email validation
-- Social dock that gently magnifies on hover
+A minimalist, high-performance personal portfolio engineered with clean architecture, fluid GSAP micro-interactions, dark/light surface aesthetics, and modular component design.
 
-#### It’s implemented as a lightweight, CDN‑powered SPA—no build step required.
+---
 
-- Fast to host anywhere (GitHub Pages, Netlify, Vercel, your server)
-- Easy to customize (semantic markup, modular CSS per section, isolated JS modules)
-- Smooth, high‑polish feel (Lenis smooth scrolling, GSAP ScrollTrigger, parallax)
-- Production‑ready SEO and social cards (meta tags, Open Graph, Twitter)
+## ⚡ Highlights
 
-##
+- **Fluid Motion & Scroll** — Driven by Lenis smooth scroll and GSAP ScrollTrigger for seamless viewport animations.
+- **Surface Design System** — Refined dark/light surface hierarchy inspired by modern 2026 typography and editorial web craft.
+- **STAR Case Study Modals** — Deep-dive project breakdowns detailing *Situation*, *Task*, *Action*, and *Result*.
+- **Interactive Stacks & Tools** — Marquee badges, live project preview cursors, and custom vector icons.
+- **Zero Build Friction** — Pure modular architecture that runs smoothly across static hosts and local dev environments.
 
-### Getting started
+---
 
-- This project is static. You can run it locally in seconds.
+## 🛠️ Tech Stack
 
-### Prerequisites
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend** | HTML5, Modern CSS3, JavaScript (ES6+), Tailwind CSS, Lenis, GSAP, WebGL |
+| **Backend & APIs** | Laravel 12, PHP 8.2, Node.js, RESTful Architecture |
+| **Databases** | MySQL, SQLite, Relational Schema & ERD Design |
+| **AI & Automation** | Google Gemini AI Integration, Intelligent Workflows |
+| **Tooling** | Git, GitHub, VS Code, Figma |
 
-- Any modern browser
-- Optional: VS Code with the Live Server extension for auto‑reload
+---
 
-### Run locally
+## 📂 Featured Work
 
-- Double‑click `index.html` to open in your browser; or
-- Use Live Server in VS Code (recommended for iteration)
+- **[PUSATKOS](https://github.com/briandicky09/PUSATKOS)** — Multi-role boarding house discovery & rental management platform built with Laravel 12, PHP 8.2, Blade, Bootstrap, and MySQL.
+- **AI Full-Stack Development** — Industry-oriented web architecture, React, modern JavaScript, and AI integration (Asah by Dicoding & GoTo).
+- **CRUD Enterprise System** — Fullstack web application with complete data lifecycle management and relational database integration (Dicoding & DBS Foundation).
 
-### Deploy
+---
 
-You can deploy the repo as‑is to any static host. A custom domain is already used in the HTML’s canonical/meta tags. If you’re forking, update those tags.
+## 🚀 Quick Start
 
-- Live demo (production): Brian Dicky Vanka Andaraneva Portfolio
+Clone and run locally in seconds:
 
-### Configuration
+```bash
+# Clone the repository
+git clone https://github.com/briandicky09/brian-portfolio.git
 
-Most user‑facing content lives in HTML and the section‑specific JS files. Common edits:
+# Navigate into the project folder
+cd brian-portfolio
 
-- Social links: update anchors in `index.html` (GitHub, LinkedIn, etc.)
-- Images: replace assets under `assets/images/` and project thumbnails under `assets/images/project-thumbnails/`
-- Section styles: edit `assets/css/*.css` per section; shared styles in `assets/css/main.css`
-- Animations: tune behaviors in these modules:
-	- Hero parallax and scrolling marquees: `assets/js/hero-section.js`
-	- About flowing menu: `assets/js/aboutme-section.js`
-	- Projects tilt interactions: `assets/js/projects-section.js`
-	- Skills marquee loop: `assets/js/skills-section.js`
-	- Social dock magnify and scroll progress: `assets/js/main.js`
-	- Mouse follower text and parallax bindings: `assets/js/mousefollower.js`
-
-The contact form is wired to:
-
-- EmailJS (send emails client‑side)
-- AbstractAPI Email Validation (basic client‑side validation)
-
-Sensitive values are loaded at runtime from a git‑ignored config file. Do this once after cloning:
-
-1) Copy the example file and fill in your values
-
-```
-config.example.json → config.json
+# Start a local static server (e.g. via Python or Node)
+python -m http.server 3000
+# or
+npx serve .
 ```
 
-Fields in `config.json`:
+Open `http://localhost:3000` in your browser.
 
-- `emailJsPublicKey` — EmailJS Public Key
-- `emailJsServiceId` — EmailJS Service ID
-- `emailJsTemplateId` — EmailJS Template ID
-- `abstractApiKey` — AbstractAPI Email Validation key
+---
 
-Notes:
+## 📬 Contact & Socials
 
-- Client‑side keys are inherently public at runtime. Protect them with origin restrictions, quotas/rate limits, and monitoring in provider dashboards.
-- The contact form may not work when loading the site via `file://` due to browser restrictions on `fetch`. Use a simple local server (e.g., VS Code Live Server).
+- **GitHub**: [@briandicky09](https://github.com/briandicky09)
+- **LinkedIn**: [briandicky](https://www.linkedin.com/in/briandicky/)
+- **Email**: [briandicky09@gmail.com](mailto:briandicky09@gmail.com)
 
-##
+---
 
-### Project structure
-
-```
-index.html
-assets/
-	css/                # Section‑scoped and shared styles (Bootstrap included locally)
-	js/                 # Modular scripts per section + utilities
-	images/             # Banners, wallpapers, project thumbnails
-	icons/, fonts/      # Icon set, font assets
-```
-
-Key entry points:
-
-- Markup: `index.html`
-- Styles: `assets/css/main.css` + section files (hero/about/skills/projects/contact)
-- Scripts: `assets/js/*.js` (see Configuration)
-
-##
-
-### Help and support
-
-- Have a question or found a bug? Open an issue on the repository.
+<p align="left">
+  <sub>© 2026 Brian Dicky Vanka Andaraneva. Designed & developed with focus on clean craft.</sub>
+</p>
